@@ -9,3 +9,4 @@
 - [Git Commands Tutorial](https://www.geeksforgeeks.org/git/useful-git-commands-and-basic-concepts/)
 - [React + Typescript Tutorial](https://youtu.be/FJDVKeh7RJI?si=8sYHwWaKbExAa52k)
 - [Tailwind CSS Docs](https://tailwindcss.com/docs/aspect-ratio)
+- [Tasks](https://docs.google.com/document/d/1K4Jf8isj_1--xvBr-k8nLPrHVWJER54lxakbDaHsF2I/edit?usp=sharing)
