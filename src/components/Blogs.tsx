@@ -208,40 +208,40 @@ const Blogs = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <div className="max-w-4xl mx-auto py-12 px-6">
+      <div className="max-w-4xl mx-auto py-8 md:py-12 px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-white">
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Interns for the Summer of '25
           </h1>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto">
             CDC internship experiences from IIT Kharagpur students
           </p>
         </div>
 
         {/* Stories grouped by year */}
-        <div className="space-y-12 mb-12">
+        <div className="space-y-8 md:space-y-12 mb-8 md:mb-12">
           {sortedYears.map((year) => (
-            <div key={year} className="space-y-6">
+            <div key={year} className="space-y-4 md:space-y-6">
               {/* Year Section Header */}
-              <h2 className="text-2xl font-semibold text-white border-b border-gray-700 pb-3">
+              <h2 className="text-xl md:text-2xl font-semibold text-white border-b border-gray-700 pb-3">
                 Interns of {year}
               </h2>
 
               {/* Stories for this year */}
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 {storiesByYear[year].map((story) => (
                   <div
                     key={story.id}
                     className="bg-gray-800 rounded-lg border border-gray-700 hover:border-gray-600 transition-all"
                   >
-                    <div className="p-6 flex gap-6">
+                    <div className="p-4 md:p-6 flex flex-col sm:flex-row gap-4 md:gap-6">
                       {/* Author Photo */}
-                      <div className="flex-shrink-0">
+                      <div className="flex-shrink-0 self-center sm:self-start">
                         <img
                           src={story.authorImage}
                           alt={story.author}
-                          className="w-50 h-50 rounded-full object-cover border-2 border-gray-600"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-gray-600 mx-auto sm:mx-0"
                           onError={(e) => {
                             e.currentTarget.src = "/default-avatar.svg";
                           }}
@@ -249,22 +249,22 @@ const Blogs = () => {
                       </div>
 
                       {/* Content */}
-                      <div className="flex-1 space-y-3">
+                      <div className="flex-1 space-y-2 md:space-y-3">
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
-                            <h3 className="text-xl font-semibold text-white leading-tight mb-2">
+                            <h3 className="text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                               {story.title}
                             </h3>
 
-                            <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-400 mb-3">
                               <span className="font-medium text-gray-300">
                                 {story.author}
                               </span>
-                              <span>•</span>
+                              <span className="hidden sm:inline">•</span>
                               <span>{story.company}</span>
                             </div>
 
-                            <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                            <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
                               {story.description}
                             </p>
                           </div>

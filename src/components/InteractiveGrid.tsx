@@ -64,9 +64,10 @@ export default function InteractiveGrid() {
       const cells: Cell[] = [];
       const gridArea = { x: 0, y: h * 0.05, w: w, h: h * 0.55 }; // Full width, top 60% for grid
 
-      // Hexagonal grid pattern
-      const hexRadius = 25;
-      const hexSpacing = hexRadius * 1.8;
+      // Responsive hexagonal grid pattern
+      const isMobile = w < 768;
+      const hexRadius = isMobile ? 18 : 25; // Smaller radius on mobile
+      const hexSpacing = hexRadius * (isMobile ? 1.6 : 1.8); // Tighter spacing on mobile
       const rowHeight = hexRadius * Math.sqrt(3);
 
       const cols = Math.floor(gridArea.w / hexSpacing) + 2; // Extra columns to ensure full coverage
@@ -80,7 +81,7 @@ export default function InteractiveGrid() {
 
           // Skip some cells randomly for a more organic tech look, but only if not near edges
           const nearEdge = x < hexSpacing || x > w - hexSpacing;
-          const skipChance = nearEdge ? 0.05 : 0.15; // Less skipping near edges
+          const skipChance = nearEdge ? 0.05 : isMobile ? 0.2 : 0.15; // More skipping on mobile for performance
 
           if (Math.random() > skipChance) {
             const cellType = Math.random();

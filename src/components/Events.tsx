@@ -21,33 +21,35 @@ const Events = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation Header */}
       <div className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-700">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <nav className="flex justify-center space-x-8">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-4">
+          <nav className="flex justify-center space-x-2 md:space-x-8 overflow-x-auto">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all ${
+                className={`flex items-center space-x-2 px-3 md:px-4 py-2 rounded-lg transition-all whitespace-nowrap ${
                   activeSection === section.id
                     ? "bg-blue-600 text-white"
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700"
                 }`}
               >
-                <span className="text-xl">{section.icon}</span>
-                <span className="font-medium">{section.title}</span>
+                <span className="text-lg md:text-xl">{section.icon}</span>
+                <span className="font-medium text-sm md:text-base">
+                  {section.title}
+                </span>
               </button>
             ))}
           </nav>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
         {/* Header */}
-        <div className="text-center mb-24">
-          <h1 className="text-6xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="text-center mb-12 md:mb-24">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             CodeClub Events
           </h1>
-          <p className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
             Discover our exciting lineup of competitive programming contests,
             educational workshops, and cultural celebrations that bring together
             the entire CSE community
@@ -55,18 +57,18 @@ const Events = () => {
         </div>
 
         {/* CodeNites Section */}
-        <section id="codenites" className="mb-32 scroll-mt-24">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-8 text-blue-400">
+        <section id="codenites" className="mb-16 md:mb-32 scroll-mt-24">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-blue-400">
               🏆 console.log("CodeNites")
             </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-6 md:mb-8 px-4">
               CodeNites are bi-monthly Competitive Programming contests
               conducted by CodeClub. Where coding meets competition! Every other
               month, CodeNites brings you a thrilling showdown of programming
               prowess.
             </p>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
               Challenge yourself with real-world problems, unleash your
               algorithmic creativity, and rise above the competition. More than
               just a contest, CodeNites connect a community of fellow passionate
@@ -75,75 +77,77 @@ const Events = () => {
             </p>
           </div>
 
-          <div className="space-y-12 mb-16">
+          <div className="space-y-8 md:space-y-12 mb-8 md:mb-16">
             {/* Bimonthly CodeNites */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🔄</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+              <div className="bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-blue-500 transition-all">
+                <div className="flex items-start mb-4 md:mb-6">
+                  <div className="w-12 md:w-16 h-12 md:h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4 md:mr-6 flex-shrink-0">
+                    <span className="text-xl md:text-2xl">🔄</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-semibold text-blue-300 mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-blue-300 mb-2 md:mb-4">
                       Bimonthly CodeNites
                     </h3>
                   </div>
                 </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
+                <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 md:mb-6">
                   Where coding meets competition! Every other month, CodeNites
                   brings you a thrilling showdown of programming prowess.
                   Challenge yourself with real-world problems, unleash your
                   algorithmic creativity, and rise above the competition.
                 </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
+                <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
                   More than just a contest, CodeNites connect a community of
                   fellow passionate programmers of KGP. Ready to unleash your
                   inner coder and claim victory?
                 </p>
-                <ul className="text-gray-400 space-y-2">
+                <ul className="text-sm md:text-base text-gray-400 space-y-2">
                   <li>• Real-world programming challenges</li>
                   <li>• Algorithmic creativity showcase</li>
                   <li>• Community building among coders</li>
                   <li>• Bi-monthly competitive showdown</li>
                 </ul>
               </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
+              <div className="bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-700 flex items-center justify-center">
                 <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
+                  <div className="text-4xl md:text-6xl mb-4">📸</div>
+                  <p className="text-base md:text-lg">
+                    Photo will be added here
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Freshers' CodeNite */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🌟</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+              <div className="bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-green-500 transition-all">
+                <div className="flex items-start mb-4 md:mb-6">
+                  <div className="w-12 md:w-16 h-12 md:h-16 bg-green-600 rounded-full flex items-center justify-center mr-4 md:mr-6 flex-shrink-0">
+                    <span className="text-xl md:text-2xl">🌟</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-semibold text-green-300 mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-green-300 mb-2 md:mb-4">
                       Freshers' CodeNite
                     </h3>
                   </div>
                 </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
+                <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 md:mb-6">
                   Where coding starts, and legends rise. Freshers, step into the
                   arena! CodeNite awaits! Freshers' CodeNite is your chance to
                   dive headfirst into the exciting world of competitive
                   programming.
                 </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
+                <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
                   Level up your skills, tackle stimulating challenges, and prove
                   your coding mettle. No prior experience? No worries! Freshers'
                   CodeNite is designed just for you.
                 </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
+                <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
                   Learn from experts, network with fellow freshers, and build
                   your coding confidence and of course win bragging rights :p
                 </p>
-                <ul className="text-gray-400 space-y-2">
+                <ul className="text-sm md:text-base text-gray-400 space-y-2">
                   <li>• Beginner-friendly challenges</li>
                   <li>• Expert mentorship available</li>
                   <li>• Networking with fellow freshers</li>

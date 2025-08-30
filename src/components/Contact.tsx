@@ -1,51 +1,51 @@
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
         {/* Header */}
-        <div className="text-center mb-24">
-          <h1 className="text-6xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="text-center mb-12 md:mb-24">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Our Team
           </h1>
-          <p className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
             This is the team of CodeClub IIT Kharagpur. Meet the dedicated
             faculty and students who drive our mission forward.
           </p>
         </div>
 
         {/* Professor In-charge Section */}
-        <section className="mb-32">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-8 text-blue-400">
+        <section className="mb-16 md:mb-32">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-blue-400">
               Professor In-charge
             </h2>
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="bg-gray-800 rounded-2xl p-10 border border-gray-700 hover:border-blue-500 transition-all">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-semibold text-blue-300 mb-6">
+            <div className="bg-gray-800 rounded-2xl p-6 md:p-10 border border-gray-700 hover:border-blue-500 transition-all">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="space-y-4 md:space-y-6">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-blue-300 mb-4 md:mb-6">
                     Dr. Sandip Chakraborty
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-lg">
+                  <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                     I am working as an Associate Professor in the Department of
                     Computer Science and Engineering at the Indian Institute of
                     Technology (IIT) Kharagpur.
                   </p>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-sm md:text-base text-gray-400 leading-relaxed">
                     I obtained my Bachelor of Engineering (BE) degree from
                     Jadavpur University, Kolkata in 2009 and Master of
                     Technology (M Tech) and Doctor of Philosophy (Ph.D.), both
                     from IIT Guwahati, in 2011 and 2014, respectively.
                   </p>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-sm md:text-base text-gray-400 leading-relaxed">
                     As a system researcher, my primary research interests is in
                     the intersection of computer systems, human computer
                     interaction and machine learning.
                   </p>
-                  <div className="flex flex-wrap gap-3 mt-6">
-                    <span className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm">
+                  <div className="flex flex-wrap gap-3 mt-4 md:mt-6">
+                    <span className="bg-blue-600 text-white px-3 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm">
                       Associate Professor
                     </span>
                     <span className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm">

@@ -33,6 +33,8 @@ body,
 #root {
   height: 100%;
   margin: 0;
+  /* Prevent horizontal overflow on mobile */
+  overflow-x: hidden;
 }
 
 .app {
@@ -53,4 +55,41 @@ body,
   inset: 0;
   z-index: 0;
   display: block;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  /* Ensure proper touch behavior */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Smooth scrolling for navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced touch interactions */
+  button,
+  [role="button"],
+  a[href] {
+    /* Ensure touch targets are at least 44px */
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+  }
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Improve text readability on mobile */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
 }
