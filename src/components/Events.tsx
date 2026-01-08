@@ -1,592 +1,306 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { 
+  Trophy, Brain, Theater, Repeat, Star, Moon, 
+  Binary, ChevronRight, GraduationCap, Dumbbell,
+  Music, Map, Sparkles, Heart
+} from "lucide-react";
 
 const Events = () => {
   const [activeSection, setActiveSection] = useState("codenites");
 
   const sections = [
-    { id: "codenites", title: "CodeNites", icon: "🏆" },
-    { id: "cpworkshop", title: "CP Workshop", icon: "🧠" },
-    { id: "cultural", title: "Cultural Events", icon: "🎭" },
+    { id: "codenites", title: "CodeNites", icon: <Trophy className="w-4 h-4" /> },
+    { id: "cpworkshop", title: "CP Workshop", icon: <Brain className="w-4 h-4" /> },
+    { id: "cultural", title: "Cultural Events", icon: <Theater className="w-4 h-4" /> },
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
-    const element = document.getElementById(sectionId);
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(id);
     }
   };
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px -60% 0px',
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((sec) => {
+      const el = document.getElementById(sec.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      {/* Navigation Header */}
-      <div className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-700">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 py-4">
-          <nav className="flex justify-center space-x-2 md:space-x-8 overflow-x-auto">
+    <div className="min-h-screen bg-[#0a0c10] text-gray-100 selection:bg-blue-500/30">
+      {/* Navbar with Auto-Highlighting Buttons */}
+      <nav className="sticky top-0 z-50 border-b border-white/5 bg-[#0a0c10]/95 backdrop-blur-md">
+        <div className="max-w-6xl mx-auto px-4 py-4">
+          <div className="flex justify-center items-center gap-2 md:gap-4 overflow-x-auto no-scrollbar">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`flex items-center space-x-2 px-3 md:px-4 py-2 rounded-lg transition-all whitespace-nowrap ${
-                  activeSection === section.id
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                className={`relative flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 whitespace-nowrap ${
+                  activeSection === section.id ? "text-white" : "text-gray-400 hover:text-gray-200"
                 }`}
               >
-                <span className="text-lg md:text-xl">{section.icon}</span>
-                <span className="font-medium text-sm md:text-base">
-                  {section.title}
-                </span>
+                {activeSection === section.id && (
+                  <motion.div layoutId="activeTab" className="absolute inset-0 bg-blue-600 rounded-full -z-10" />
+                )}
+                <span className="shrink-0">{section.icon}</span>
+                <span className="font-medium text-xs md:text-sm">{section.title}</span>
               </button>
             ))}
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
-        {/* Header */}
-        <div className="text-center mb-12 md:mb-24">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      <div className="max-w-7xl mx-auto px-6 py-20">
+        {/* Main Header */}
+        <header className="text-center mb-32">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             CodeClub Events
           </h1>
-          <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
-            Discover our exciting lineup of competitive programming contests,
-            educational workshops, and cultural celebrations that bring together
-            the entire CSE community
+          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            Discover our exciting lineup of competitive programming contests, educational workshops, and cultural celebrations that bring together the entire CSE community.
           </p>
-        </div>
+        </header>
 
-        {/* CodeNites Section */}
-        <section id="codenites" className="mb-16 md:mb-32 scroll-mt-24">
-          <div className="text-center mb-8 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-blue-400">
-              🏆 console.log("CodeNites")
-            </h2>
-            <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-6 md:mb-8 px-4">
-              CodeNites are bi-monthly Competitive Programming contests
-              conducted by CodeClub. Where coding meets competition! Every other
-              month, CodeNites brings you a thrilling showdown of programming
-              prowess.
-            </p>
-            <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
-              Challenge yourself with real-world problems, unleash your
-              algorithmic creativity, and rise above the competition. More than
-              just a contest, CodeNites connect a community of fellow passionate
-              programmers of KGP. Ready to unleash your inner coder and claim
-              victory?
-            </p>
-          </div>
-
-          <div className="space-y-8 md:space-y-12 mb-8 md:mb-16">
-            {/* Bimonthly CodeNites */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
-              <div className="bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-blue-500 transition-all">
-                <div className="flex items-start mb-4 md:mb-6">
-                  <div className="w-12 md:w-16 h-12 md:h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4 md:mr-6 flex-shrink-0">
-                    <span className="text-xl md:text-2xl">🔄</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-semibold text-blue-300 mb-2 md:mb-4">
-                      Bimonthly CodeNites
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 md:mb-6">
-                  Where coding meets competition! Every other month, CodeNites
-                  brings you a thrilling showdown of programming prowess.
-                  Challenge yourself with real-world problems, unleash your
-                  algorithmic creativity, and rise above the competition.
-                </p>
-                <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
-                  More than just a contest, CodeNites connect a community of
-                  fellow passionate programmers of KGP. Ready to unleash your
-                  inner coder and claim victory?
-                </p>
-                <ul className="text-sm md:text-base text-gray-400 space-y-2">
-                  <li>• Real-world programming challenges</li>
-                  <li>• Algorithmic creativity showcase</li>
-                  <li>• Community building among coders</li>
-                  <li>• Bi-monthly competitive showdown</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-4xl md:text-6xl mb-4">📸</div>
-                  <p className="text-base md:text-lg">
-                    Photo will be added here
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Freshers' CodeNite */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
-              <div className="bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-green-500 transition-all">
-                <div className="flex items-start mb-4 md:mb-6">
-                  <div className="w-12 md:w-16 h-12 md:h-16 bg-green-600 rounded-full flex items-center justify-center mr-4 md:mr-6 flex-shrink-0">
-                    <span className="text-xl md:text-2xl">🌟</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-semibold text-green-300 mb-2 md:mb-4">
-                      Freshers' CodeNite
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 md:mb-6">
-                  Where coding starts, and legends rise. Freshers, step into the
-                  arena! CodeNite awaits! Freshers' CodeNite is your chance to
-                  dive headfirst into the exciting world of competitive
-                  programming.
-                </p>
-                <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
-                  Level up your skills, tackle stimulating challenges, and prove
-                  your coding mettle. No prior experience? No worries! Freshers'
-                  CodeNite is designed just for you.
-                </p>
-                <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-4 md:mb-6">
-                  Learn from experts, network with fellow freshers, and build
-                  your coding confidence and of course win bragging rights :p
-                </p>
-                <ul className="text-sm md:text-base text-gray-400 space-y-2">
-                  <li>• Beginner-friendly challenges</li>
-                  <li>• Expert mentorship available</li>
-                  <li>• Networking with fellow freshers</li>
-                  <li>• Confidence building exercises</li>
-                  <li>• Win bragging rights!</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bitwise CodeNite */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🌙</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-purple-300 mb-4">
-                      Bitwise CodeNite
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  The code never sleeps!! A legendary overnight coding marathon
-                  for the bravest coders. Push your limits and code through the
-                  night in a thrilling competition.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  Experience the camaraderie and collaboration of the coding
-                  community. Emerge victorious and claim the ultimate coding
-                  crown!
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• Overnight coding marathon</li>
-                  <li>• Ultimate coding challenge</li>
-                  <li>• Community collaboration</li>
-                  <li>• Legendary coder status</li>
-                  <li>• Ultimate coding crown</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
+        {/* --- SECTION 1: CODENITES --- */}
+        <section id="codenites" className="mb-40 scroll-mt-28">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-400">🏆 console.log("CodeNites")</h2>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                CodeNites are bi-monthly Competitive Programming contests conducted by CodeClub. Where coding meets competition! Every other month, CodeNites brings you a thrilling showdown of programming prowess.
+              </p>
+              <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                Challenge yourself with real-world problems, unleash your algorithmic creativity, and rise above the competition. More than just a contest, CodeNites connect a community of fellow passionate programmers of KGP. Ready to unleash your inner coder and claim victory?
+              </p>
             </div>
           </div>
 
-          {/* CodeNites Leaderboard Section */}
-          <div className="bg-gradient-to-r from-blue-900/50 to-purple-900/50 rounded-2xl p-10 border border-gray-700 mb-8">
-            <h3 className="text-3xl font-semibold text-center mb-8 text-blue-300">
-              🏆 CodeNites Champions
-            </h3>
-            <p className="text-center text-gray-300 mb-8 text-lg">
-              Celebrating our top performers across all CodeNites competitions
-            </p>
-            <div className="bg-gray-800 rounded-xl p-6 border border-gray-600">
-              <p className="text-center text-gray-400 text-lg">
-                🚀 Leaderboard updates after each CodeNites event
-              </p>
-              <p className="text-center text-gray-500 mt-2">
-                Join the next CodeNites to see your name here!
-              </p>
+          <div className="space-y-16">
+            <EventCard 
+              title="Bimonthly CodeNites"
+              glowColor="hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.4)]"
+              borderColor="hover:border-blue-500/50"
+              icon={<Repeat className="text-blue-400" />}
+              content="Where coding meets competition! Every other month, CodeNites brings you a thrilling showdown of programming prowess. Challenge yourself with real-world problems, unleash your algorithmic creativity, and rise above the competition. More than just a contest, CodeNites connect a community of fellow passionate programmers of KGP."
+              features={["Real-world programming challenges", "Algorithmic creativity showcase", "Community building among coders", "Bi-monthly competitive showdown"]}
+            />
+            <EventCard 
+              title="Freshers' CodeNite"
+              reversed
+              glowColor="hover:shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)]"
+              borderColor="hover:border-green-500/50"
+              icon={<Star className="text-green-400" />}
+              content="Where coding starts, and legends rise. Freshers, step into the arena! CodeNite awaits! Freshers' CodeNite is your chance to dive headfirst into the exciting world of competitive programming. Level up your skills, tackle stimulating challenges, and prove your coding mettle. No prior experience? No worries!"
+              features={["Beginner-friendly challenges", "Expert mentorship available", "Networking with fellow freshers", "Confidence building exercises", "Win bragging rights!"]}
+            />
+            <EventCard 
+              title="Bitwise CodeNite"
+              glowColor="hover:shadow-[0_0_40px_-10px_rgba(168,85,247,0.4)]"
+              borderColor="hover:border-purple-500/50"
+              icon={<Moon className="text-purple-400" />}
+              content="The code never sleeps!! A legendary overnight coding marathon for the bravest coders. Push your limits and code through the night in a thrilling competition. Experience the camaraderie and collaboration of the coding community. Emerge victorious and claim the ultimate coding crown!"
+              features={["Overnight coding marathon", "Ultimate coding challenge", "Community collaboration", "Legendary coder status", "Ultimate coding crown"]}
+            />
+          </div>
+
+          <div className="mt-20 p-10 rounded-3xl bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-white/10 text-center">
+            <h3 className="text-3xl font-semibold mb-6 text-blue-300">🏆 CodeNites Champions</h3>
+            <p className="text-lg text-gray-300 mb-8">Celebrating our top performers across all CodeNites competitions.</p>
+            <div className="bg-black/30 backdrop-blur-sm p-8 rounded-2xl border border-white/5 max-w-2xl mx-auto">
+              <p className="text-blue-200">🚀 Leaderboard updates after each CodeNites event.</p>
+              <p className="text-gray-400 mt-2 italic text-sm">Join the next CodeNites to see your name here!</p>
             </div>
           </div>
         </section>
 
-        {/* CP Workshop Section */}
-        <section id="cpworkshop" className="mb-32 scroll-mt-24">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-8 text-purple-400">
-              🧠 Competitive Programming Workshop
-            </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-              Join the CP workshop by Grimoire of Code and CodeClub, tailored
-              for Div 3 and Div 2 students, for a comprehensive learning
-              experience in competitive programming.
+        {/* --- SECTION 2: CP WORKSHOP --- */}
+        <section id="cpworkshop" className="mb-40 scroll-mt-28">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-purple-400">🧠 Competitive Programming Workshop</h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 leading-relaxed">
+              Join the CP workshop by Grimoire of Code and CodeClub, tailored for Div 3 and Div 2 students, for a comprehensive learning experience in competitive programming.
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Elevate your skills and conquer coding challenges! Master
-              essential algorithms, data structures, and problem-solving
-              techniques that will transform you into a competitive programming
-              champion.
+              Elevate your skills and conquer coding challenges! Master essential algorithms, data structures, and problem-solving techniques that will transform you into a competitive programming champion.
             </p>
           </div>
 
-          <div className="space-y-12 mb-16">
-            {/* STL & Number Theory */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🔢</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-blue-300 mb-4">
-                      STL & Number Theory
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  Competitive programming relies on STL's dynamic data
-                  structures. Master the Standard Template Library with vectors,
-                  sets, maps, and priority queues for efficient data
-                  manipulation.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  Greedy algorithms make optimal local choices swiftly. Binary
-                  search efficiently locates elements, while number theory
-                  maneuvers integers for concise solutions, amplifying
-                  problem-solving versatility.
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• STL containers and algorithms</li>
-                  <li>• Greedy algorithm strategies</li>
-                  <li>• Binary search techniques</li>
-                  <li>• Number theory fundamentals</li>
-                  <li>• Modular arithmetic</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Dynamic Programming */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🔄</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-green-300 mb-4">
-                      Dynamic Programming
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  Dynamic Programming in competitive programming optimally
-                  solves problems by breaking them into smaller subproblems.
-                  Learn to identify overlapping subproblems and optimal
-                  substructure.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  It efficiently stores and reuses intermediate results,
-                  enhancing performance and enabling elegant solutions to
-                  complex computational challenges. Master memoization and
-                  tabulation techniques.
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• Problem decomposition strategies</li>
-                  <li>• Memoization techniques</li>
-                  <li>• Tabulation methods</li>
-                  <li>• State transition optimization</li>
-                  <li>• Classic DP patterns</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Graph Theory */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🕸️</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-purple-300 mb-4">
-                      Graph Theory
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  Graph theory in competitive programming models relationships
-                  between entities using nodes and edges. Master fundamental
-                  graph representations and traversal algorithms.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  Algorithms like DFS and BFS traverse graphs, while Dijkstra's
-                  and Floyd-Warshall's tackle shortest paths. Graph theory
-                  enriches problem-solving, enabling efficient navigation and
-                  analysis of interconnected data structures.
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• Graph representation techniques</li>
-                  <li>• DFS and BFS traversals</li>
-                  <li>• Shortest path algorithms</li>
-                  <li>• Minimum spanning trees</li>
-                  <li>• Advanced graph algorithms</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
+          <div className="grid lg:grid-cols-3 gap-8">
+            <WorkshopCard 
+              title="STL & Number Theory"
+              icon={<Binary className="text-blue-400" />}
+              content="Competitive programming relies on STL's dynamic data structures. Master the Standard Template Library with vectors, sets, maps, and priority queues for efficient data manipulation. Greedy algorithms make optimal local choices swiftly. Binary search efficiently locates elements, while number theory maneuvers integers for concise solutions, amplifying problem-solving versatility."
+              features={["STL containers and algorithms", "Greedy algorithm strategies", "Binary search techniques", "Number theory fundamentals", "Modular arithmetic"]}
+            />
+            <WorkshopCard 
+              title="Dynamic Programming"
+              icon={<Repeat className="text-green-400" />}
+              content="Dynamic Programming in competitive programming optimally solves problems by breaking them into smaller subproblems. Learn to identify overlapping subproblems and optimal substructure. It efficiently stores and reuses intermediate results, enhancing performance and enabling elegant solutions to complex computational challenges. Master memoization and tabulation techniques."
+              features={["Problem decomposition strategies", "Memoization techniques", "Tabulation methods", "State transition optimization", "Classic DP patterns"]}
+            />
+            <WorkshopCard 
+              title="Graph Theory"
+              icon={<Map className="text-purple-400" />}
+              content="Graph theory in competitive programming models relationships between entities using nodes and edges. Master fundamental graph representations and traversal algorithms. Algorithms like DFS and BFS traverse graphs, while Dijkstra's and Floyd-Warshall's tackle shortest paths. Graph theory enriches problem-solving, enabling efficient navigation and analysis of interconnected data structures."
+              features={["Graph representation techniques", "DFS and BFS traversals", "Shortest path algorithms", "Minimum spanning trees", "Advanced graph algorithms"]}
+            />
           </div>
 
-          {/* Workshop Benefits */}
-          <div className="bg-gradient-to-r from-purple-900/50 to-blue-900/50 rounded-2xl p-10 border border-gray-700 mb-8">
-            <h3 className="text-3xl font-semibold text-center mb-8 text-purple-300">
-              🎯 Workshop Highlights
-            </h3>
+          <div className="mt-12 p-10 rounded-3xl bg-gradient-to-r from-purple-900/20 to-blue-900/20 border border-white/10">
+            <h3 className="text-2xl font-semibold text-center mb-8 text-purple-300">🎯 Workshop Highlights</h3>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-800 rounded-xl p-6 border border-gray-600">
-                <h4 className="text-xl font-semibold text-blue-300 mb-4">
-                  For Div 3 Students
-                </h4>
-                <p className="text-gray-300 leading-relaxed">
-                  Perfect starting point for competitive programming journey.
-                  Learn fundamental concepts, basic algorithms, and
-                  problem-solving strategies.
-                </p>
+              <div className="p-6 bg-black/30 rounded-2xl border border-white/5">
+                <h4 className="text-xl font-bold text-blue-300 mb-3">For Div 3 Students</h4>
+                <p className="text-gray-400 text-sm leading-relaxed">Perfect starting point for competitive programming journey. Learn fundamental concepts, basic algorithms, and problem-solving strategies.</p>
               </div>
-              <div className="bg-gray-800 rounded-xl p-6 border border-gray-600">
-                <h4 className="text-xl font-semibold text-green-300 mb-4">
-                  For Div 2 Students
-                </h4>
-                <p className="text-gray-300 leading-relaxed">
-                  Advanced techniques and complex algorithms. Master challenging
-                  topics and prepare for higher-level competitive programming
-                  contests.
-                </p>
+              <div className="p-6 bg-black/30 rounded-2xl border border-white/5">
+                <h4 className="text-xl font-bold text-green-300 mb-3">For Div 2 Students</h4>
+                <p className="text-gray-400 text-sm leading-relaxed">Advanced techniques and complex algorithms. Master challenging topics and prepare for higher-level competitive programming contests.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Cultural Events Section */}
-        <section id="cultural" className="mb-32 scroll-mt-24">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-8 text-green-400">
-              🎭 Cultural Events: Building Connections Beyond Code
-            </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-              CodeClub believes in fostering a vibrant and inclusive community
-              within the Department of Computer Science and Engineering. While
-              we are passionate about coding, we also recognize the importance
-              of fostering connections and celebrating our diverse talents and
-              interests.
-            </p>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              That's why we organize three exciting cultural events throughout
-              the year! These cultural events are more than just celebrations;
-              they are vital threads in the fabric of our departmental
-              community.
-            </p>
-          </div>
-
-          <div className="space-y-12 mb-16">
-            {/* Fresher's Nite */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🎭</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-yellow-300 mb-4">
-                      Fresher's Nite
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  This event marks the grand welcome of our newest cohort of CSE
-                  students, kicking off their exciting journey at IIT Kharagpur.
-                  Imagine a night filled with vibrant performances, dazzling
-                  lights, and infectious energy.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  Freshers showcase their hidden talents through song, dance,
-                  musical ensembles, captivating instrumentals, and even magic
-                  shows. Group dances pulsate with rhythm and laughter, while
-                  dramas and skits bring humor and heartwarming stories to life.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  The night is sprinkled with fun-filled activities, including
-                  funny Q&A sessions and stand-up comedy acts by the freshers
-                  themselves. Laughter fills the air as everyone bonds over
-                  shared experiences, creating lasting memories.
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• Song and dance performances</li>
-                  <li>• Musical ensembles & instrumentals</li>
-                  <li>• Magic shows and skits</li>
-                  <li>• Q&A sessions and comedy</li>
-                  <li>• Community bonding activities</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
-
-            {/* CSE Sports Day */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-orange-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">🏃</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-orange-300 mb-4">
-                      CSE Sports Day
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  This day is a testament to the diverse athletic prowess and
-                  the spirit of sportsmanship that runs deep within our CSE
-                  community. Witness students from different years and
-                  disciplines engage in friendly rivalry across various sporting
-                  events.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  Whether it's the adrenaline rush on the basketball court, the
-                  strategic finesse on the chessboard, or the sheer
-                  determination on the track, the day is filled with excitement
-                  and cheering. But it's not just about winning; it's about the
-                  joy of participation.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  And to make it even more special, professors and staff join
-                  us, adding another layer of connection and creating a truly
-                  inclusive atmosphere. The day culminates with a ceremony where
-                  prizes and medals are awarded to the winners.
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• Basketball tournaments</li>
-                  <li>• Chess competitions</li>
-                  <li>• Track and field events</li>
-                  <li>• Professor & staff participation</li>
-                  <li>• Awards ceremony</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Farewell Party */}
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-red-500 transition-all">
-                <div className="flex items-start mb-6">
-                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                    <span className="text-2xl">👨‍🎓</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-red-300 mb-4">
-                      Farewell Party
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  As our seniors prepare to bid farewell to their time at IIT
-                  Kharagpur, we hold a memorable Farewell Party to celebrate
-                  their achievements and contributions to the department. This
-                  is a time to reflect on shared memories, build lasting bonds,
-                  and express gratitude.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  The event takes on a heartwarming ambiance, filled with
-                  heartfelt speeches from our professors and seniors themselves.
-                  As they share stories, experiences, and words of wisdom, a
-                  sense of nostalgia and pride washes over the room.
-                </p>
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  The evening concludes with a delicious dinner, providing the
-                  perfect opportunity for informal conversations, laughter, and
-                  reminiscing about the years gone by. It's a bittersweet
-                  occasion, but one that leaves everyone feeling grateful.
-                </p>
-                <ul className="text-gray-400 space-y-2">
-                  <li>• Heartfelt speeches & stories</li>
-                  <li>• Sharing experiences & wisdom</li>
-                  <li>• Nostalgic memory sharing</li>
-                  <li>• Dinner and conversations</li>
-                  <li>• Gratitude & celebration</li>
-                </ul>
-              </div>
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-lg">Photo will be added here</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Community Impact */}
-          <div className="bg-gradient-to-r from-green-900/50 to-blue-900/50 rounded-2xl p-10 border border-gray-700 mb-8">
-            <h3 className="text-3xl font-semibold text-center mb-8 text-green-300">
-              🌟 Building Our Community
-            </h3>
-            <p className="text-center text-gray-300 mb-8 text-lg leading-relaxed max-w-4xl mx-auto">
-              These cultural events provide opportunities for students to
-              connect with each other beyond academics, discover hidden talents,
-              and create memories that will last a lifetime. We believe that by
-              fostering a strong sense of community and belonging, we can
-              empower our students to thrive not only as coders but also as
-              well-rounded individuals.
-            </p>
-            <div className="text-center">
-              <p className="text-gray-400 text-lg">
-                So, whether you're a coding enthusiast, a sports fanatic, or
-                simply looking for a fun way to connect with fellow CSE
-                students, join us at our next cultural event!
+        {/* --- SECTION 3: CULTURAL EVENTS --- */}
+        <section id="cultural" className="mb-40 scroll-mt-28">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-green-400">🎭 Cultural Events</h2>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                CodeClub believes in fostering a vibrant and inclusive community within the Department of Computer Science and Engineering. While we are passionate about coding, we also recognize the importance of fostering connections and celebrating our diverse talents and interests.
+              </p>
+              <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                That's why we organize three exciting cultural events throughout the year! These cultural events are more than just celebrations; they are vital threads in the fabric of our departmental community.
               </p>
             </div>
           </div>
+
+          <div className="space-y-16">
+            <EventCard 
+              title="Fresher's Nite"
+              glowColor="hover:shadow-[0_0_40px_-10px_rgba(234,179,8,0.4)]"
+              borderColor="hover:border-yellow-500/50"
+              icon={<Music className="text-yellow-400" />}
+              content="This event marks the grand welcome of our newest cohort of CSE students, kicking off their exciting journey at IIT Kharagpur. Imagine a night filled with vibrant performances, dazzling lights, and infectious energy. Freshers showcase their hidden talents through song, dance, musical ensembles, captivating instrumentals, and even magic shows. The night is sprinkled with fun-filled activities, including funny Q&A sessions and stand-up comedy acts."
+              features={["Song and dance performances", "Musical ensembles & instrumentals", "Magic shows and skits", "Q&A sessions and comedy", "Community bonding activities"]}
+            />
+            <EventCard 
+              title="CSE Sports Day"
+              reversed
+              glowColor="hover:shadow-[0_0_40px_-10px_rgba(249,115,22,0.4)]"
+              borderColor="hover:border-orange-500/50"
+              icon={<Dumbbell className="text-orange-400" />}
+              content="This day is a testament to the diverse athletic prowess and the spirit of sportsmanship that runs deep within our CSE community. Witness students from different years and disciplines engage in friendly rivalry across various sporting events. Whether it's the adrenaline rush on the basketball court, strategic finesse on the chessboard, or sheer determination on the track, the day is filled with excitement. Professors and staff join us, adding another layer of connection."
+              features={["Basketball tournaments", "Chess competitions", "Track and field events", "Professor & staff participation", "Awards ceremony"]}
+            />
+            <EventCard 
+              title="Farewell Party"
+              glowColor="hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)]"
+              borderColor="hover:border-red-500/50"
+              icon={<GraduationCap className="text-red-400" />}
+              content="As our seniors prepare to bid farewell to their time at IIT Kharagpur, we hold a memorable Farewell Party to celebrate their achievements and contributions to the department. This is a time to reflect on shared memories, build lasting bonds, and express gratitude. The event takes on a heartwarming ambiance, filled with heartfelt speeches from our professors and seniors themselves. The evening concludes with a delicious dinner, providing the perfect opportunity for informal conversations and laughter."
+              features={["Heartfelt speeches & stories", "Sharing experiences & wisdom", "Nostalgic memory sharing", "Dinner and conversations", "Gratitude & celebration"]}
+            />
+          </div>
+
+          {/* --- FINAL SECTION: BUILDING OUR COMMUNITY --- */}
+          <motion.div 
+            whileHover={{ y: -10 }}
+            className="mt-32 p-10 md:p-16 rounded-[2.5rem] bg-gradient-to-br from-green-900/30 via-blue-900/20 to-transparent border border-white/10 text-center transition-all duration-500 hover:border-green-500/40 hover:shadow-[0_0_50px_-15px_rgba(34,197,94,0.3)]"
+          >
+            <div className="flex justify-center mb-8">
+              <div className="p-4 bg-green-500/10 rounded-2xl border border-green-500/20">
+                <Heart className="w-10 h-10 text-green-400 animate-pulse" />
+              </div>
+            </div>
+            <h3 className="text-4xl font-bold mb-8 text-green-300 tracking-tight italic">🌟 Building Our Community</h3>
+            <div className="max-w-4xl mx-auto space-y-8">
+              <p className="text-xl text-gray-200 leading-relaxed font-medium">
+                These cultural events provide opportunities for students to connect with each other beyond academics, discover hidden talents, and create memories that will last a lifetime.
+              </p>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                We believe that by fostering a strong sense of community and belonging, we can empower our students to thrive not only as coders but also as well-rounded individuals.
+              </p>
+              <div className="pt-8 border-t border-white/5">
+                <p className="text-blue-400 text-xl font-semibold">
+                  So, whether you're a coding enthusiast, a sports fanatic, or simply looking for a fun way to connect with fellow CSE students, join us at our next cultural event!
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </section>
       </div>
     </div>
   );
 };
+
+// --- SUB-COMPONENTS ---
+
+const EventCard = ({ title, content, icon, features, reversed, glowColor, borderColor }: any) => (
+  <motion.div 
+    whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 20 }} viewport={{ once: true }}
+    whileHover={{ y: -5 }}
+    className={`flex flex-col ${reversed ? "lg:flex-row-reverse" : "lg:flex-row"} gap-10 items-center bg-white/[0.02] p-8 md:p-12 rounded-[2rem] border border-white/5 transition-all duration-300 ${glowColor} ${borderColor}`}
+  >
+    <div className="flex-1 space-y-6">
+      <div className="flex items-center gap-4">
+        <div className="p-4 bg-white/5 rounded-2xl border border-white/10">{icon}</div>
+        <h3 className="text-3xl font-bold tracking-tight">{title}</h3>
+      </div>
+      <p className="text-gray-300 leading-relaxed text-sm md:text-base">{content}</p>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 border-t border-white/5 pt-6">
+        {features.map((f: string) => (
+          <li key={f} className="text-xs md:text-sm text-gray-500 flex items-center gap-2">
+            <ChevronRight className="w-3 h-3 text-blue-500 shrink-0" /> {f}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div className="flex-1 w-full aspect-video bg-gray-900 border border-white/10 rounded-2xl flex flex-col items-center justify-center text-gray-600 relative overflow-hidden group">
+      <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-700 opacity-40">📸</div>
+      <span className="text-xs font-mono uppercase tracking-widest opacity-30">Image: {title}</span>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+    </div>
+  </motion.div>
+);
+
+const WorkshopCard = ({ title, icon, content, features }: any) => (
+  <motion.div 
+    whileHover={{ y: -10 }}
+    className="p-8 rounded-[2rem] bg-white/[0.02] border border-white/5 flex flex-col h-full transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_40px_-15px_rgba(168,85,247,0.3)]"
+  >
+    <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 text-2xl border border-white/10">{icon}</div>
+    <h3 className="text-2xl font-bold mb-4 tracking-tight">{title}</h3>
+    <p className="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">{content}</p>
+    <ul className="space-y-3 border-t border-white/5 pt-8">
+      {features.map((f: string) => (
+        <li key={f} className="text-xs text-gray-500 flex items-center gap-3">
+          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full shrink-0" /> {f}
+        </li>
+      ))}
+    </ul>
+  </motion.div>
+);
 
 export default Events;
