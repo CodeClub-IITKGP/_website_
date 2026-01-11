@@ -1,5 +1,17 @@
+import { motion } from "framer-motion";
+import {
+  BookOpen,
+  ExternalLink,
+  User,
+  Briefcase,
+  Calendar,
+  ChevronRight,
+  Globe,
+  ArrowRight,
+} from "lucide-react";
+
 const Blogs = () => {
-  // Real CDC internship stories sorted by graduation year (decreasing)
+  // Real CDC internship stories preserved from original source
   const allStories = [
     {
       id: 1,
@@ -58,7 +70,7 @@ const Blogs = () => {
       year: "2023",
       url: "https://medium.com/@suryan535/cdc-internship-de-shaw-9597bae7eb56",
       description:
-        "Hi Everyone, I am Jothi Prakash, a Fourth Year Dual Degree student in the Department of Electronics And Electrical Communication Engineering, and will be specializing in Vision And Intelligent Systems in my final year.",
+        "Hi Everyone, I am Jothi Prakash, a Fourth Year Dual Degree student in the Department of Electronics And Electrical Communication Engineering.",
       authorImage:
         "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*wW6Rk1lhiY6H9p9-",
     },
@@ -70,7 +82,7 @@ const Blogs = () => {
       year: "2023",
       url: "https://medium.com/@mentaltraffic/cdc-a-step-along-the-journey-36ce4275cc71",
       description:
-        "I am a fourth year undergraduate student (as of August 2022) from the Computer Science and Engineering department and I am interested in Machine Learning, specifically natural language programming.",
+        "I am a fourth year undergraduate student (as of August 2022) from the Computer Science and Engineering department and I am interested in Machine Learning.",
       authorImage: "https://avatars.githubusercontent.com/u/58178738?v=4",
     },
     {
@@ -116,7 +128,7 @@ const Blogs = () => {
       year: "2022",
       url: "https://snehalreddykoukuntla.medium.com/cdc-chronicles-16a16990c849",
       description:
-        "I am Snehal Reddy, a 4th year dual degree student studying computer science at IIT Kharagpur. Since my first year, I have laid my hands on a variety of things — worked on projects in vision under professors.",
+        "I am Snehal Reddy, a 4th year dual degree student studying computer science at IIT Kharagpur.",
       authorImage:
         "https://miro.medium.com/v2/resize:fill:200:200/1*JqgECbvwdm7IJF7yugp0dg.jpeg",
     },
@@ -140,7 +152,7 @@ const Blogs = () => {
       year: "2021",
       url: "https://sahil132jindal.medium.com/cdc-chapter-a934c9452782",
       description:
-        "Experience of cracking Microsoft through CDC, sharing insights on technical preparation and interview strategy.",
+        "Experience of cracking Microsoft through CDC, sharing insights on technical preparation.",
       authorImage:
         "https://miro.medium.com/v2/resize:fill:200:200/1*t2aT3iWNGu4h2RaTA2WZMQ.jpeg",
     },
@@ -152,7 +164,7 @@ const Blogs = () => {
       year: "2020",
       url: "https://avisankritya.medium.com/cdc-chronicles-the-internship-saga-f2ec7b6f80d2",
       description:
-        "Comprehensive account of the CDC journey leading to Goldman Sachs, covering both technical and soft skills preparation.",
+        "Comprehensive account of the CDC journey leading to Goldman Sachs.",
       authorImage:
         "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*9AjyqZ__zbbE1LKA",
     },
@@ -164,7 +176,7 @@ const Blogs = () => {
       year: "2020",
       url: "https://somaychopra.medium.com/the-cdc-chapter-de1cfece3a3d",
       description:
-        "Personal story of navigating the CDC process and landing at Goldman Sachs, with focus on persistence and preparation.",
+        "Personal story of navigating the CDC process and landing at Goldman Sachs.",
       authorImage:
         "https://miro.medium.com/v2/resize:fill:200:200/1*5N_eq5EEtV0N4zSRxraORQ.jpeg",
     },
@@ -176,7 +188,7 @@ const Blogs = () => {
       year: "2019",
       url: "https://medium.com/@sreetheerdha9/my-internship-experience-with-facebook-london-fee27467ca08",
       description:
-        "Detailed experience of interning at Facebook London office, including the interview process, work culture, and learnings from the internship.",
+        "Detailed experience of interning at Facebook London office, including the interview process and culture.",
       authorImage:
         "https://miro.medium.com/v2/resize:fill:176:176/1*rowITPYx-IvzuKdEHAKQIw@2x.jpeg",
     },
@@ -188,13 +200,13 @@ const Blogs = () => {
       year: "2019",
       url: "https://sibasmarak.medium.com/a-post-cdc-interview-665c83f01e78",
       description:
-        "Reflection on the CDC interview process and experience with Adobe, sharing insights and learnings from the journey.",
+        "Reflection on the CDC interview process and experience with Adobe.",
       authorImage:
         "https://miro.medium.com/v2/resize:fill:176:176/1*8F1wGYUxVKIEsF4E8CPkyg.jpeg",
     },
   ];
 
-  // Group stories by year
+  // Grouping logic preserved
   const storiesByYear = allStories.reduce((acc, story) => {
     if (!acc[story.year]) {
       acc[story.year] = [];
@@ -203,114 +215,127 @@ const Blogs = () => {
     return acc;
   }, {} as { [key: string]: typeof allStories });
 
-  // Sort years in descending order
   const sortedYears = Object.keys(storiesByYear).sort(
     (a, b) => parseInt(b) - parseInt(a)
   );
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <div className="max-w-4xl mx-auto py-8 md:py-12 px-4 md:px-6">
-        {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Interns for the Summer of '25
+    <div className="min-h-screen bg-[#0a0c10] text-gray-100 selection:bg-blue-500/30 font-sans">
+      {/* Background Aurora Effects */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600/10 blur-[120px] rounded-full" />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 py-20 relative">
+        {/* Header Section */}
+        <motion.header
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-24 md:mb-32"
+        >
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-mono mb-6">
+            <BookOpen className="w-4 h-4" /> Student Chronicles
+          </div>
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
+            <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
+              Interns for the Summer of '25
+            </span>
           </h1>
-          <p className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto">
-            CDC internship experiences from IIT Kharagpur students
+          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            CDC internship experiences from IIT Kharagpur students, sharing
+            insights and journeys to elite tech companies.
           </p>
-        </div>
+        </motion.header>
 
         {/* Stories grouped by year */}
-        <div className="space-y-8 md:space-y-12 mb-8 md:mb-12">
+        <div className="space-y-24 md:space-y-32">
           {sortedYears.map((year) => (
-            <div key={year} className="space-y-4 md:space-y-6">
-              {/* Year Section Header */}
-              <h2 className="text-xl md:text-2xl font-semibold text-white border-b border-gray-700 pb-3">
-                Interns of {year}
-              </h2>
+            <section key={year} className="relative">
+              {/* Year Floating Label */}
+              <div className="flex items-center gap-4 mb-12">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-100 flex items-center gap-3">
+                  <Calendar className="text-blue-500 w-8 h-8" /> Interns of{" "}
+                  {year}
+                </h2>
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10" />
+              </div>
 
-              {/* Stories for this year */}
-              <div className="space-y-4 md:space-y-6">
+              {/* Stories Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {storiesByYear[year].map((story) => (
-                  <div
-                    key={story.id}
-                    className="bg-gray-800 rounded-lg border border-gray-700 hover:border-gray-600 transition-all"
-                  >
-                    <div className="p-4 md:p-6 flex flex-col sm:flex-row gap-4 md:gap-6">
-                      {/* Author Photo */}
-                      {/* <div className="flex-shrink-0 self-center sm:self-start"> */}
-                      <div className="flex-shrink-0 flex items-center justify-center">
-
-                        <img
-                          src={story.authorImage}
-                          alt={story.author}
-                          // className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-gray-600 mx-auto sm:mx-0"
-                          className="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-gray-500"
-
-                          onError={(e) => {
-                            e.currentTarget.src = "/default-avatar.svg";
-                          }}
-                        />
-                      </div>
-
-                      {/* Content */}
-                      <div className="flex-1 space-y-2 md:space-y-3">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <h3 className="text-lg md:text-xl font-semibold text-white leading-tight mb-2">
-                              {story.title}
-                            </h3>
-
-                            {/* <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-400 mb-3"> */}
-                            <div className="flex flex-wrap items-center gap-2 text-sm text-gray-400 mb-2">
-                              <span className="font-medium text-gray-300">
-                                {story.author}
-                              </span>
-                              <span className="hidden sm:inline">•</span>
-                              {/* <span>{story.company}</span> */}
-                              <span>{story.company}</span>
-
-                              {story.domain && (
-                                <span className="text-xs px-2 py-0.5 rounded bg-gray-700 text-gray-300">
-                                  {story.domain}
-                                </span>
-                              )}
-
-                            </div>
-
-                            {/* <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4"> */}
-                            <p className="text-gray-150 text-sm md:text-base leading-relaxed mb-3">
-                              {story.description}
-                            </p>
-                          </div>
-                        </div>
-
-                        {/* <div className="flex items-center justify-between pt-2"> */}
-                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 pt-1">
-
-                          <span className="text-xs text-gray-500">
-                            medium.com
-                          </span>
-                          <a
-                            href={story.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-blue-300 text-sm font-medium"
-                          >
-                            Read More →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <StoryCard key={story.id} story={story} />
                 ))}
               </div>
-            </div>
+            </section>
           ))}
         </div>
       </div>
     </div>
+  );
+};
+
+// --- HELPER COMPONENT: STORY CARD ---
+
+const StoryCard = ({ story }: { story: any }) => {
+  return (
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -8 }}
+      className="group bg-white/[0.02] rounded-[2rem] p-8 border border-white/5 transition-all duration-300 hover:border-blue-500/40 hover:shadow-[0_0_40px_-15px_rgba(59,130,246,0.3)] flex flex-col md:flex-row gap-8 items-center md:items-start"
+    >
+      {/* Profile Image with Glow */}
+      <div className="relative shrink-0">
+        <div className="absolute inset-0 bg-blue-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+        <img
+          src={story.authorImage}
+          alt={story.author}
+          className="relative w-24 h-24 md:w-28 md:h-28 rounded-[2rem] object-cover border-2 border-white/10 group-hover:border-blue-500/50 transition-all shadow-2xl"
+          onError={(e) => {
+            e.currentTarget.src = "/default-avatar.svg";
+          }}
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="flex-1 space-y-4 text-center md:text-left">
+        <div className="space-y-2">
+          <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
+            {story.title}
+          </h3>
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-500 font-medium">
+            <span className="flex items-center gap-1.5 text-gray-300">
+              <User className="w-4 h-4 text-blue-500" /> {story.author}
+            </span>
+            <span className="flex items-center gap-1.5 text-gray-300">
+              <Briefcase className="w-4 h-4 text-purple-500" /> {story.company}
+            </span>
+          </div>
+        </div>
+
+        <p className="text-gray-400 text-sm md:text-base leading-relaxed line-clamp-3 italic">
+          "{story.description}"
+        </p>
+
+        <div className="flex items-center justify-between pt-4 border-t border-white/5">
+          <span className="flex items-center gap-1.5 text-xs font-mono text-gray-600">
+            <Globe className="w-3 h-3" /> medium.com
+          </span>
+          <a
+            href={story.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/link inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-bold text-sm transition-all"
+          >
+            Read Full Story
+            <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+    </motion.div>
   );
 };
 
