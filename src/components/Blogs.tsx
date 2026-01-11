@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
-import { 
-  BookOpen, ExternalLink, User, Briefcase, 
-  Calendar, ChevronRight, Globe, ArrowRight 
+import {
+  BookOpen,
+  ExternalLink,
+  User,
+  Briefcase,
+  Calendar,
+  ChevronRight,
+  Globe,
+  ArrowRight,
 } from "lucide-react";
 
 const Blogs = () => {
@@ -13,9 +19,12 @@ const Blogs = () => {
       author: "Aaditri Vaibhav",
       company: "Amazon",
       year: "2023",
+      domain: "xyz",
       url: "https://medium.com/@aaditrivaibhav/cdc-internship-experience-2022-2ad95c88fbe6",
-      description: "I am Aaditri Vaibhav, a 3rd-year undergraduate studying metallurgical and materials engineering at IIT Kharagpur. I will be interning at Amazon in the summer of 2023.",
-      authorImage: "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*VAe3T69tVmDRyXkz",
+      description:
+        "I am Aaditri Vaibhav, a 3rd-year undergraduate studying metallurgical and materials engineering at IIT Kharagpur. I will be interning at Amazon in the summer of 2023.",
+      authorImage:
+        "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*VAe3T69tVmDRyXkz",
     },
     {
       id: 2,
@@ -23,9 +32,12 @@ const Blogs = () => {
       author: "Kushaz Sehgal",
       company: "Rubrik",
       year: "2024",
+      domain: "Software",
       url: "https://medium.com/@kushaz.sehgal/coding-my-way-to-cloud-nine-a-rubrik-adventure-f75318f6626a",
-      description: "Hi guys! I am Kushaz Sehgal, a fourth-year dual degree student pursuing Computer Science and Engineering at IIT Kharagpur. I just finished my CDC Internship process, and I will be interning at Rubrik, Palo Alto in the summer of 2024.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*dRSXmZp-XHIHgCIULCLAWw.jpeg",
+      description:
+        "Hi guys! I am Kushaz Sehgal, a fourth-year dual degree student pursuing Computer Science and Engineering at IIT Kharagpur. I just finished my CDC Internship process, and I will be interning at Rubrik, Palo Alto in the summer of 2024.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*dRSXmZp-XHIHgCIULCLAWw.jpeg",
     },
     {
       id: 3,
@@ -34,8 +46,10 @@ const Blogs = () => {
       company: "APT Portfolio",
       year: "2024",
       url: "https://medium.com/@yatindraindoria75/the-low-cp-cdc-story-64da9aae3d85",
-      description: "Yatindra here, I am a 4th year from the Department of Computer Science and Engineering, enrolled in the Dual Degree course. I secured a Software Engineering Internship offer from APT Portfolio.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*n9s6oe4ZGQ_bMVQ0H4En6w.jpeg",
+      description:
+        "Yatindra here, I am a 4th year from the Department of Computer Science and Engineering, enrolled in the Dual Degree course. I secured a Software Engineering Internship offer from APT Portfolio.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*n9s6oe4ZGQ_bMVQ0H4En6w.jpeg",
     },
     {
       id: 4,
@@ -44,7 +58,8 @@ const Blogs = () => {
       company: "Goldman Sachs",
       year: "2023",
       url: "https://medium.com/@swarnimasaxena819/cdc-internship-experience-806192fa34fc",
-      description: "Experience of securing an internship at Goldman Sachs through CDC, including technical preparation and interview rounds.",
+      description:
+        "Experience of securing an internship at Goldman Sachs through CDC, including technical preparation and interview rounds.",
       authorImage: "/default-avatar.svg",
     },
     {
@@ -54,8 +69,10 @@ const Blogs = () => {
       company: "D.E. Shaw",
       year: "2023",
       url: "https://medium.com/@suryan535/cdc-internship-de-shaw-9597bae7eb56",
-      description: "Hi Everyone, I am Jothi Prakash, a Fourth Year Dual Degree student in the Department of Electronics And Electrical Communication Engineering.",
-      authorImage: "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*wW6Rk1lhiY6H9p9-",
+      description:
+        "Hi Everyone, I am Jothi Prakash, a Fourth Year Dual Degree student in the Department of Electronics And Electrical Communication Engineering.",
+      authorImage:
+        "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*wW6Rk1lhiY6H9p9-",
     },
     {
       id: 6,
@@ -64,7 +81,8 @@ const Blogs = () => {
       company: "Microsoft",
       year: "2023",
       url: "https://medium.com/@mentaltraffic/cdc-a-step-along-the-journey-36ce4275cc71",
-      description: "I am a fourth year undergraduate student (as of August 2022) from the Computer Science and Engineering department and I am interested in Machine Learning.",
+      description:
+        "I am a fourth year undergraduate student (as of August 2022) from the Computer Science and Engineering department and I am interested in Machine Learning.",
       authorImage: "https://avatars.githubusercontent.com/u/58178738?v=4",
     },
     {
@@ -74,8 +92,10 @@ const Blogs = () => {
       company: "Salesforce",
       year: "2023",
       url: "https://medium.com/@utsav.mehta/an-overwhelming-episode-8ce0b8736987",
-      description: "Candid account of the emotional rollercoaster during CDC and eventual success with Salesforce internship.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*g1kO9wzvC_3oR-XlDyJYrg.jpeg",
+      description:
+        "Candid account of the emotional rollercoaster during CDC and eventual success with Salesforce internship.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*g1kO9wzvC_3oR-XlDyJYrg.jpeg",
     },
     {
       id: 8,
@@ -84,8 +104,10 @@ const Blogs = () => {
       company: "Glean",
       year: "2023",
       url: "https://medium.com/@ary1733/cdc-chronicles-65231255bb12",
-      description: "Experience of securing internship at Glean, a rising startup in the enterprise search space.",
-      authorImage: "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*71Fzz_ce-eWFlmCF",
+      description:
+        "Experience of securing internship at Glean, a rising startup in the enterprise search space.",
+      authorImage:
+        "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*71Fzz_ce-eWFlmCF",
     },
     {
       id: 9,
@@ -94,7 +116,8 @@ const Blogs = () => {
       company: "Nutanix",
       year: "2023",
       url: "https://medium.com/@arekhani5/and-finally-i-could-chill-my-way-through-college-now-5cfc95bbd6f3",
-      description: "A lighthearted take on securing Nutanix internship and the relief that follows successful CDC completion.",
+      description:
+        "A lighthearted take on securing Nutanix internship and the relief that follows successful CDC completion.",
       authorImage: "/default-avatar.svg",
     },
     {
@@ -104,8 +127,10 @@ const Blogs = () => {
       company: "Microsoft",
       year: "2022",
       url: "https://snehalreddykoukuntla.medium.com/cdc-chronicles-16a16990c849",
-      description: "I am Snehal Reddy, a 4th year dual degree student studying computer science at IIT Kharagpur.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*JqgECbvwdm7IJF7yugp0dg.jpeg",
+      description:
+        "I am Snehal Reddy, a 4th year dual degree student studying computer science at IIT Kharagpur.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*JqgECbvwdm7IJF7yugp0dg.jpeg",
     },
     {
       id: 11,
@@ -114,8 +139,10 @@ const Blogs = () => {
       company: "D.E. Shaw",
       year: "2021",
       url: "https://medium.com/@vinitraj412/d-day-the-internship-chronicles-c80d3be64a23",
-      description: "Detailed account of the D.E. Shaw interview process and the journey leading up to the final selection.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*HZlY-hugE8YifvMT24QCBQ.jpeg",
+      description:
+        "Detailed account of the D.E. Shaw interview process and the journey leading up to the final selection.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*HZlY-hugE8YifvMT24QCBQ.jpeg",
     },
     {
       id: 12,
@@ -124,8 +151,10 @@ const Blogs = () => {
       company: "Microsoft",
       year: "2021",
       url: "https://sahil132jindal.medium.com/cdc-chapter-a934c9452782",
-      description: "Experience of cracking Microsoft through CDC, sharing insights on technical preparation.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*t2aT3iWNGu4h2RaTA2WZMQ.jpeg",
+      description:
+        "Experience of cracking Microsoft through CDC, sharing insights on technical preparation.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*t2aT3iWNGu4h2RaTA2WZMQ.jpeg",
     },
     {
       id: 13,
@@ -134,8 +163,10 @@ const Blogs = () => {
       company: "Goldman Sachs",
       year: "2020",
       url: "https://avisankritya.medium.com/cdc-chronicles-the-internship-saga-f2ec7b6f80d2",
-      description: "Comprehensive account of the CDC journey leading to Goldman Sachs.",
-      authorImage: "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*9AjyqZ__zbbE1LKA",
+      description:
+        "Comprehensive account of the CDC journey leading to Goldman Sachs.",
+      authorImage:
+        "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*9AjyqZ__zbbE1LKA",
     },
     {
       id: 14,
@@ -144,8 +175,10 @@ const Blogs = () => {
       company: "Goldman Sachs",
       year: "2020",
       url: "https://somaychopra.medium.com/the-cdc-chapter-de1cfece3a3d",
-      description: "Personal story of navigating the CDC process and landing at Goldman Sachs.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:200:200/1*5N_eq5EEtV0N4zSRxraORQ.jpeg",
+      description:
+        "Personal story of navigating the CDC process and landing at Goldman Sachs.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:200:200/1*5N_eq5EEtV0N4zSRxraORQ.jpeg",
     },
     {
       id: 15,
@@ -154,8 +187,10 @@ const Blogs = () => {
       company: "Meta",
       year: "2019",
       url: "https://medium.com/@sreetheerdha9/my-internship-experience-with-facebook-london-fee27467ca08",
-      description: "Detailed experience of interning at Facebook London office, including the interview process and culture.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:176:176/1*rowITPYx-IvzuKdEHAKQIw@2x.jpeg",
+      description:
+        "Detailed experience of interning at Facebook London office, including the interview process and culture.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:176:176/1*rowITPYx-IvzuKdEHAKQIw@2x.jpeg",
     },
     {
       id: 16,
@@ -164,8 +199,10 @@ const Blogs = () => {
       company: "Adobe",
       year: "2019",
       url: "https://sibasmarak.medium.com/a-post-cdc-interview-665c83f01e78",
-      description: "Reflection on the CDC interview process and experience with Adobe.",
-      authorImage: "https://miro.medium.com/v2/resize:fill:176:176/1*8F1wGYUxVKIEsF4E8CPkyg.jpeg",
+      description:
+        "Reflection on the CDC interview process and experience with Adobe.",
+      authorImage:
+        "https://miro.medium.com/v2/resize:fill:176:176/1*8F1wGYUxVKIEsF4E8CPkyg.jpeg",
     },
   ];
 
@@ -192,7 +229,7 @@ const Blogs = () => {
 
       <div className="max-w-6xl mx-auto px-6 py-20 relative">
         {/* Header Section */}
-        <motion.header 
+        <motion.header
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-24 md:mb-32"
@@ -206,7 +243,8 @@ const Blogs = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            CDC internship experiences from IIT Kharagpur students, sharing insights and journeys to elite tech companies.
+            CDC internship experiences from IIT Kharagpur students, sharing
+            insights and journeys to elite tech companies.
           </p>
         </motion.header>
 
@@ -218,7 +256,8 @@ const Blogs = () => {
               <div className="flex items-center gap-4 mb-12">
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-100 flex items-center gap-3">
-                  <Calendar className="text-blue-500 w-8 h-8" /> Interns of {year}
+                  <Calendar className="text-blue-500 w-8 h-8" /> Interns of{" "}
+                  {year}
                 </h2>
                 <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10" />
               </div>
@@ -241,7 +280,7 @@ const Blogs = () => {
 
 const StoryCard = ({ story }: { story: any }) => {
   return (
-    <motion.div 
+    <motion.div
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 20 }}
       viewport={{ once: true }}
