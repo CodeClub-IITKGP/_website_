@@ -7,6 +7,7 @@ const Blogs = () => {
       author: "Aaditri Vaibhav",
       company: "Amazon",
       year: "2023",
+      domain: "xyz",
       url: "https://medium.com/@aaditrivaibhav/cdc-internship-experience-2022-2ad95c88fbe6",
       description:
         "I am Aaditri Vaibhav, a 3rd-year undergraduate studying metallurgical and materials engineering at IIT Kharagpur. I will be interning at Amazon in the summer of 2023.",
@@ -19,6 +20,7 @@ const Blogs = () => {
       author: "Kushaz Sehgal",
       company: "Rubrik",
       year: "2024",
+      domain: "Software",
       url: "https://medium.com/@kushaz.sehgal/coding-my-way-to-cloud-nine-a-rubrik-adventure-f75318f6626a",
       description:
         "Hi guys! I am Kushaz Sehgal, a fourth-year dual degree student pursuing Computer Science and Engineering at IIT Kharagpur. I just finished my CDC Internship process, and I will be interning at Rubrik, Palo Alto in the summer of 2024.",
@@ -237,11 +239,15 @@ const Blogs = () => {
                   >
                     <div className="p-4 md:p-6 flex flex-col sm:flex-row gap-4 md:gap-6">
                       {/* Author Photo */}
-                      <div className="flex-shrink-0 self-center sm:self-start">
+                      {/* <div className="flex-shrink-0 self-center sm:self-start"> */}
+                      <div className="flex-shrink-0 flex items-center justify-center">
+
                         <img
                           src={story.authorImage}
                           alt={story.author}
-                          className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-gray-600 mx-auto sm:mx-0"
+                          // className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-gray-600 mx-auto sm:mx-0"
+                          className="w-20 h-20 md:w-28 md:h-28 rounded-full object-cover border-2 border-gray-500"
+
                           onError={(e) => {
                             e.currentTarget.src = "/default-avatar.svg";
                           }}
@@ -256,21 +262,33 @@ const Blogs = () => {
                               {story.title}
                             </h3>
 
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-400 mb-3">
+                            {/* <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-400 mb-3"> */}
+                            <div className="flex flex-wrap items-center gap-2 text-sm text-gray-400 mb-2">
                               <span className="font-medium text-gray-300">
                                 {story.author}
                               </span>
                               <span className="hidden sm:inline">•</span>
+                              {/* <span>{story.company}</span> */}
                               <span>{story.company}</span>
+
+                              {story.domain && (
+                                <span className="text-xs px-2 py-0.5 rounded bg-gray-700 text-gray-300">
+                                  {story.domain}
+                                </span>
+                              )}
+
                             </div>
 
-                            <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+                            {/* <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4"> */}
+                            <p className="text-gray-150 text-sm md:text-base leading-relaxed mb-3">
                               {story.description}
                             </p>
                           </div>
                         </div>
 
-                        <div className="flex items-center justify-between pt-2">
+                        {/* <div className="flex items-center justify-between pt-2"> */}
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 pt-1">
+
                           <span className="text-xs text-gray-500">
                             medium.com
                           </span>
