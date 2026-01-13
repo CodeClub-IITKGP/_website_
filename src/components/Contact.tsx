@@ -81,7 +81,7 @@ const Contact = () => {
                   <Tag text="IIT Kharagpur" color="bg-green-600" />
                 </div>
               </div>
-              <div className="relative group aspect-square lg:aspect-auto h-full min-h-[400px]">
+              <div className="relative group lg:aspect-auto h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-900 border border-white/10 rounded-3xl flex flex-col items-center justify-center text-gray-600 transition-all duration-500 group-hover:border-blue-500/30 overflow-hidden">
                   <div className="text-8xl mb-4 group-hover:scale-110 transition-transform duration-700 opacity-40">
                     👨‍🏫
@@ -94,7 +94,18 @@ const Contact = () => {
             </div>
           </motion.div>
         </section>
+        {/* 
+<div className="flex-1 w-full aspect-video bg-gray-900 border border-white/10 rounded-2xl flex flex-col items-center justify-center text-gray-600 relative overflow-hidden group">
+      <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-700 opacity-40">
+        📸
+      </div>
+      <span className="text-xs font-mono uppercase tracking-widest opacity-30">
+        Image: {title}
+      </span>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+    </div>
 
+*/}
         {/* Governing Batch Section */}
         <section className="mb-40">
           <SectionHeader

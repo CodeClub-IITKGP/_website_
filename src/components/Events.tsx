@@ -75,7 +75,7 @@ const Events = () => {
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`relative flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`relative flex items-center space-x-2 px-4 py-2 -mx-3 rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeSection === section.id
                     ? "text-white"
                     : "text-gray-400 hover:text-gray-200"
@@ -84,7 +84,7 @@ const Events = () => {
                 {activeSection === section.id && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute inset-0 bg-blue-600 rounded-full -z-10"
+                    className="absolute -inset-0 bg-blue-600 rounded-full -z-10"
                   />
                 )}
                 <span className="shrink-0">{section.icon}</span>
@@ -113,7 +113,7 @@ const Events = () => {
         {/* --- SECTION 1: CODENITES --- */}
         <section id="codenites" className="mb-40 scroll-mt-28">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-400">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-blue-400">
               🏆 console.log("CodeNites")
             </h2>
             <div className="space-y-6 max-w-4xl mx-auto">
@@ -353,27 +353,5 @@ const EventCard = ({
     </div>
   </motion.div>
 );
-
-// const WorkshopCard = ({ title, icon, content, features }: any) => (
-//   <motion.div
-//     whileHover={{ y: -10 }}
-//     className="p-8 rounded-[2rem] bg-white/[0.02] border border-white/5 flex flex-col h-full transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_40px_-15px_rgba(168,85,247,0.3)]"
-//   >
-//     <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 text-2xl border border-white/10">
-//       {icon}
-//     </div>
-//     <h3 className="text-2xl font-bold mb-4 tracking-tight">{title}</h3>
-//     <p className="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
-//       {content}
-//     </p>
-//     <ul className="space-y-3 border-t border-white/5 pt-8">
-//       {features.map((f: string) => (
-//         <li key={f} className="text-xs text-gray-500 flex items-center gap-3">
-//           <div className="w-1.5 h-1.5 bg-blue-500 rounded-full shrink-0" /> {f}
-//         </li>
-//       ))}
-//     </ul>
-//   </motion.div>
-// );
 
 export default Events;
