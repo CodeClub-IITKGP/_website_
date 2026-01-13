@@ -68,8 +68,10 @@ export default function InteractiveGrid() {
       const gridArea = { x: 0, y: h * 0.05, w: w, h: h * 0.55 };
 
       const isMobile = w < 768;
-      // Mobile: Bigger cells (30) = Fewer objects = Higher FPS
-      const hexRadius = isMobile ? 30 : 25; 
+      
+      // --- CHANGE 1: Smaller cells on mobile ---
+      // Changed from 30 to 18 so they look small and sharp on phones
+      const hexRadius = isMobile ? 18 : 25; 
       const hexSpacing = hexRadius * (isMobile ? 1.7 : 1.8); 
       const rowHeight = hexRadius * Math.sqrt(3);
 
@@ -83,7 +85,11 @@ export default function InteractiveGrid() {
           const y = gridArea.y + row * rowHeight;
 
           const nearEdge = x < hexSpacing || x > w - hexSpacing;
-          const skipChance = nearEdge ? 0.05 : isMobile ? 0.3 : 0.15; 
+          
+          // --- CHANGE 2: Manage density ---
+          // Since cells are smaller, we fit more on screen. 
+          // Increased mobile skip chance to 0.4 (40% empty space) to keep FPS high.
+          const skipChance = nearEdge ? 0.05 : isMobile ? 0.4 : 0.15; 
 
           if (Math.random() > skipChance) {
             const cellType = Math.random();
