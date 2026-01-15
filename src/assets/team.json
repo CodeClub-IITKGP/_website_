@@ -6,6 +6,8 @@
     "github": "",
     "dp": "abhinav sen.jpeg",
     "role": "Associate Member"
+  },
+  {
     "name": "Niranjana Reddy B S",
     "roll": "21CS30033",
     "linkedin": "https://www.linkedin.com/in/niranjana-reddy-b-s-1402a52a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -315,7 +317,6 @@
     "linkedin": "",
     "github": "",
     "dp": "pranav rajput.jpeg",
-    "role": "Associate Member"
     "role": "Secretary"
   },
   {
@@ -381,7 +382,6 @@
     "github": "",
     "dp": "Rishi Songirkar.jpeg",
     "role": "Associate Member"
-    "role": "Secretary"
   },
   {
     "name": "Saishree Pradhan",
@@ -590,8 +590,6 @@
     "github": "",
     "dp": "vivek jaiswal.jpeg",
     "role": "Associate Member"
-    "dp": "soham das.jpg",
-    "role": "Coordinator"
   },
   {
     "name": "Shourya Godha",
@@ -656,19 +654,5 @@
     "github": "https://github.com/Yash23kr",
     "dp": "yash kumar.jpeg",
     "role": "Tech Lead"
-  },
-  {
-    "name": "Yatindra Indoria",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "yatindra indoria.jpeg",
-    "role": "Associate Member"
-    "name": "Krish Khimasia",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
-    "github": "https://www.linkedin.com/in/krish-khimasia/",
-    "dp": "krish khimasia.jpeg",
-    "role": "Finance Head"
   }
 ]
