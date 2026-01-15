@@ -1,28 +1,204 @@
 [
   {
     "id": 1,
-    "title": "CDC Internship Experience 2022",
-    "author": "Aaditri Vaibhav",
-    "company": "Amazon",
-    "year": "2023",
-    "domain": "SDE",
-    "url": "https://medium.com/@aaditrivaibhav/cdc-internship-experience-2022-2ad95c88fbe6",
-    "description": "I am Aaditri Vaibhav, a 3rd-year undergraduate studying metallurgical and materials engineering at IIT Kharagpur. I will be interning at Amazon in the summer of 2023.",
-    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*VAe3T69tVmDRyXkz"
+    "title": "My low latency CDC story…",
+    "author": "Arudeep Kumar",
+    "company": "Graviton Research Capital LLP",
+    "year": "2025",
+    "domain": "Software",
+    "url": "https://medium.com/@arudeep2005/my-cdc-story-67de45b5467b",
+    "description": "Hello, I am Arudeep Kumar, a third-year undergraduate in the Department of Computer Science and Engineering, pursuing a B.Tech. I will be interning as a software engineer at Graviton Research Capital LLP in the summer of 2025.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/1*aXjPA2tqDhu2aEBgGln0QA.gif"
   },
   {
     "id": 2,
-    "title": "Coding My Way to Cloud Nine: A Rubrik Adventure",
-    "author": "Kushaz Sehgal",
-    "company": "Rubrik",
-    "year": "2024",
-    "domain": "SWE",
-    "url": "https://medium.com/@kushaz.sehgal/coding-my-way-to-cloud-nine-a-rubrik-adventure-f75318f6626a",
-    "description": "Hi guys! I am Kushaz Sehgal, a fourth-year dual degree student pursuing Computer Science and Engineering at IIT Kharagpur. I just finished my CDC Internship process, and I will be interning at Rubrik, Palo Alto in the summer of 2024.",
-    "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*dRSXmZp-XHIHgCIULCLAWw.jpeg"
+    "title": "CDC: A High-Stakes Game",
+    "author": "Sahil Asawa",
+    "company": "Graviton Research Capital LLP",
+    "year": "2025",
+    "domain": "Quant",
+    "url": "https://medium.com/@asawasahil/cdc-a-high-stakes-game-cc923a6294b3",
+    "description": "Hey there! I’m Sahil Asawa, a 3rd-year undergrad from the CSE department, pursuing a B.Tech. I’m thrilled to share that I’ll be interning at Graviton Research Capital LLP in the summer of 2025.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/1*HdBYSwp2usBY1J_tGR2QZw.jpeg"
   },
   {
     "id": 3,
+    "title": "From Data Dreams to Software Success: My Journey to a Salesforce Internship",
+    "author": "Parijat Sutradhar",
+    "company": "Salesforce",
+    "year": "2025",
+    "domain": "Software",
+    "url": "https://medium.com/@parijatsutradhar.slg04/from-data-dreams-to-software-success-my-journey-to-a-salesforce-internship-b94588bb1155",
+    "description": "I am Parijat Sutradhar, a third-year undergraduate student of the Department of Mechanical Engineering at IIT Kharagpur.I will be joining Salesforce in the summer of 2025 as a Software Engineering Intern.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*QMsEA5Gp1KQmIRVq"
+  },
+  {
+    "id": 4,
+    "title": "From Day One to Day 1: CDC Internship Experience 2024",
+    "author": "Akash Manna",
+    "company": "Amazon",
+    "year": "2025",
+    "domain": "Software",
+    "url": "https://medium.com/@akash.manna2003/from-day-one-to-day-1-cdc-internship-experience-2024-a680f03ad080",
+    "description": "I am Akash Manna, a third year undergraduate student of the department of Mining Engineering. I will be interning at Amazon in the summer of 2025.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*AGfXQVevVbXCAcfj"
+  },
+  {
+    "id": 5,
+    "title": "CDC Story — No Rocket Science, Just Simple Stuff",
+    "author": "Harshit Singh",
+    "company": "Quadeye",
+    "year": "2025",
+    "domain": "Quant",
+    "url": "https://medium.com/@harshitofficial99987/cdc-story-no-rocket-science-just-simple-stuff-2325dea9f7e2",
+    "description": "Hey guys! I’m Harshit Singh, a 3rd-year undergraduate in the Department of Computer Science and Engineering at IIT Kharagpur, enrolled in its BTech course. I’ll be interning at Quadeye as a Quant Engineer in the summer of 2024.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*5P5D4OPtNG4JhHP5"
+  },
+  {
+    "id": 6,
+    "title": "And this is how I could finally relax in my life",
+    "author": "Srijan Ranjan",
+    "company": "Google",
+    "year": "2025",
+    "domain": "Software",
+    "url": "https://medium.com/@srijan4504/and-this-how-i-could-finally-relax-in-my-life-1034c8df4515",
+    "description": "Hello everyone, I am Srijan Ranjan, a 3rd-year undergraduate from the Department of Mathematics, enrolled in its Bachelor of Science course. I will be joining Google India in the summer of 2025 as a software engineering intern.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*hMePyTINJcYsNRTR"
+  },
+  {
+    "id": 7,
+    "title": "Reverse Engineering My CDC Internship Preparation",
+    "author": "Ronit Nanwani",
+    "company": "Quantbox",
+    "year": "2025",
+    "domain": "Systems",
+    "url": "https://medium.com/@ronit.nanwani/reverse-engineering-my-cdc-internship-preparation-d2e665439a81",
+    "description": "Hi there!! I am Ronit Nanwani, a 4th year undergraduate student of the department of Computer Science and Engineering enrolled in its Dual Degree course. I will be interning at Quantbox Research as a systems intern in the summer of 2025.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/1*5Hhs9csPS2nYOPrmL3KCCA.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "CDC : An Uphill Battle",
+    "author": "Shristi Singh",
+    "company": "HUL",
+    "year": "2025",
+    "domain": "Data Analytics",
+    "url": "https://medium.com/@shris2020/cdc-an-uphill-battle-410d5e7c6f0d",
+    "description": "Hello everyone! I am Shristi Singh, a third-year undergraduate of the Department of Mathematics, enrolled in its BS course of Mathematics and Computing. I have received an internship offer at HUL in the Data Analytics division for the summer of 2025.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*kDqNjBN4S1Y5Qcka"
+  },
+  {
+    "id": 9,
+    "title": "My CDC Internship Journey: Preparation, Challenges, and Lessons Learned",
+    "author": "Sampreeth R S",
+    "company": "Quadeye",
+    "year": "2025",
+    "domain": "Systems",
+    "url": "https://medium.com/@sampreeth2003/hey-everyone-afdf14f6b95c",
+    "description": "Hey everyone! I am Sampreeth R S, a fourth-year undergraduate in the Department of Computer Science and Engineering. I am going to be interning at Quadeye as a systems engineer in the summer of 2025.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*6DyueFZkxPEb8JJ6"
+  },
+  {
+    "id": 10,
+    "title": "Beyond Resumes and Rejections",
+    "author": "Devansh Ladha",
+    "company": "Rubrik",
+    "year": "2025",
+    "domain": "Software",
+    "url": "https://medium.com/@devanshladha.dl/beyond-resumes-and-rejections-c8378dbf48f3",
+    "description": "Hello, I am Devansh Ladha, a 3rd year undergraduate from the department of Mathematics, enrolled in it’s Bachelor of Science course. I’ll be joining Rubrik in summer 2025 as a software engineering intern.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*BI_js96MuZU8168R"
+  },
+  {
+    "id": 11,
+    "title": "IITKGP Internship drive: Code, Effort, and Offer",
+    "author": "Soukhin Nayek",
+    "company": "Databricks",
+    "year": "2024",
+    "domain": "Software",
+    "url": "https://medium.com/@soukhinkgp2/databricks-internship-code-effort-and-offer-6cad5c4c6736",
+    "description": "Hello Everyone, I am Soukhin Nayek, a 3rd-year undergraduate from the Department of Computer Science and Engineering at IIT Kharagpur. This blog includes my experience with the CDC internship process, my preparation methods, and some advice.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/1*lBCRiNqetd728jIeQ9jlyg.png"
+  },
+  {
+    "id": 12,
+    "title": "My CDC intern story, a sLow prep event",
+    "author": "Roopak Priydarshi",
+    "company": "Optiver",
+    "year": "2024",
+    "domain": "Software",
+    "url": "https://medium.com/@priydarshiroopak/my-cdc-intern-story-a-slow-prep-event-3a7482da0cb5",
+    "description": "Hello reader! I am Roopak Priydarshi, currently a 4th year undergraduate pursuing a Dual Degree in Computer Science & Engineering from IIT Kharagpur. I participated in the on-campus CDC internship drive at my university and got an offer from Optiver for the Software Engineering Internship role.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/1*XuGQppIJ3bxPCtMwr0sJEQ.jpeg"
+  },
+  {
+    "id": 13,
+    "title": "It takes one interview, for me it’s Oracle",
+    "author": "Harshith Chowdary",
+    "company": "Oracle Corporation",
+    "year": "2024",
+    "domain": "Software",
+    "url": "https://medium.com/@harshithchowdarymeduri/it-takes-one-interview-for-me-its-oracle-0c9699b823e7",
+    "description": "Hey guys, I am Harshith Chowdary Meduri, a 3rd year BTech student of the Department of Computer Science and Engineering. I am a member of CodeClub and Swarm Robotics. I will be Interning at Oracle Corporation as a Backend Developer (SDE). ",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/0*yGVei67hyqbplHSD.jpg"
+  },
+  {
+    "id": 14,
+    "title": "CDC Internships: A Personal Voyage",
+    "author": "Barun Pua",
+    "company": "Graviton Research Capital LLP",
+    "year": "2024",
+    "domain": "Quant",
+    "url": "https://medium.com/@barunparua/cdc-internships-a-personal-voyage-67aaa4b7a08f",
+    "description": "Hello everyone!I am Barun Parua, a 3rd year undergraduate student from the Department of Computer Science and Engineering, enrolled in its B.Tech. course. I will be interning at Graviton Research Capital LLP as a Quantitative Researcher in the summer of 2024.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/1*XhE13OloVtE_uQxit0X2SQ.jpeg"
+  },
+  {
+    "id": 15,
+    "title": "If You’re Reading This, It’s Early Still",
+    "author": "Krish Khimasia",
+    "company": "Quadeye",
+    "year": "2024",
+    "domain": "Systems",
+    "url": "https://medium.com/@khimasiakrish/if-youre-reading-this-it-s-early-still-eafc6702567c",
+    "description": "Hey guys! I’m Krish Khimasia, a 3rd-year undergraduate in the Department of Computer Science and Engineering at IIT Kharagpur, enrolled in its BTech course. I’ll be interning at Quadeye as a Systems Engineer in the summer of 2024.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*2mxD3qoUMveFEsgo"
+  },
+  {
+    "id": 16,
+    "title": "The Grind to Internship",
+    "author": "Abhijit Singh",
+    "company": "Graviton Research Capital",
+    "year": "2024",
+    "domain": "Software",
+    "url": "https://medium.com/@Abhijeet_13/the-grind-to-internship-2722f527a560",
+    "description": "Hello everyone, I am Abhijeet Singh, a 4th-year undergraduate from the Department of Computer Science and Engineering, enrolled in its Dual Degree course. I will be interning at Graviton Research Capital in the summer of 2024.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:64:64/1*fh2Agiy6F2mnspMdtknkEQ.jpeg"
+  },
+  {
+    "id": 17,
+    "title": "I Saw it Coming, or Did I?",
+    "author": "Anit Mangal",
+    "company": "Glean",
+    "year": "2024",
+    "domain": "Software",
+    "url": "https://medium.com/@anit.mangal/i-saw-it-coming-or-did-i-016ad0b7ea09",
+    "description": "Hi! I am Anit Mangal, a third-year undergraduate student from the Department of Computer Science and Engineering at IIT Kharagpur, enrolled in its B.Tech. Course. I will intern at Glean as a Software Engineer Intern in the summer of ’24.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*W11TtrPtuGzgr3PS"
+  },
+  {
+    "id": 18,
+    "title": "Notes from CDC",
+    "author": "Yash Kunwar",
+    "company": "UIpath",
+    "year": "2024",
+    "domain": "Software",
+    "url": "https://medium.com/@yashkunwar02/notes-from-cdc-5c650e49962d",
+    "description": "Hey! My name is Yash Kunwar. I am a 4th year undergraduate pursuing Integrated MSc in Mathematics and Computing from Department of Mathematics at IIT KGP. I got an internship offer from UIpath for summer of 2024.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*n9s6oe4ZGQ_bMVQ0H4En6w.jpeg"
+  },
+  {
+    "id": 19,
     "title": "The Low CP CDC Story",
     "author": "Yatindra Indoria",
     "company": "APT Portfolio",
@@ -33,18 +209,40 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*n9s6oe4ZGQ_bMVQ0H4En6w.jpeg"
   },
   {
-    "id": 4,
+    "id": 20,
+    "title": "Coding My Way to Cloud Nine: A Rubrik Adventure",
+    "author": "Kushaz Sehgal",
+    "company": "Rubrik",
+    "year": "2024",
+    "domain": "SWE",
+    "url": "https://medium.com/@kushaz.sehgal/coding-my-way-to-cloud-nine-a-rubrik-adventure-f75318f6626a",
+    "description": "Hi guys! I am Kushaz Sehgal, a fourth-year dual degree student pursuing Computer Science and Engineering at IIT Kharagpur. I just finished my CDC Internship process, and I will be interning at Rubrik, Palo Alto in the summer of 2024.",
+    "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*dRSXmZp-XHIHgCIULCLAWw.jpeg"
+  },
+  {
+    "id": 21,
+    "title": "CDC Internship Experience 2022",
+    "author": "Aaditri Vaibhav",
+    "company": "Amazon",
+    "year": "2023",
+    "domain": "SDE",
+    "url": "https://medium.com/@aaditrivaibhav/cdc-internship-experience-2022-2ad95c88fbe6",
+    "description": "I am Aaditri Vaibhav, a 3rd-year undergraduate studying metallurgical and materials engineering at IIT Kharagpur. I will be interning at Amazon in the summer of 2023.",
+    "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*VAe3T69tVmDRyXkz"
+  },
+  {
+    "id": 22,
     "title": "CDC Internship Experience",
     "author": "Swarnima Saxena",
     "company": "Goldman Sachs",
     "year": "2023",
     "domain": "SWE",
-    "url": "https://medium.com/@swarnimasaxena819/cdc-internship-experience-806192fa34fc",
+    "url": "https://miro.medium.com/v2/da:true/resize:fill:64:64/0*vQzKhi3FiNRBGiLi",
     "description": "Experience of securing an internship at Goldman Sachs through CDC, including technical preparation and interview rounds.",
     "authorImage": "/default-avatar.svg"
   },
   {
-    "id": 5,
+    "id": 23,
     "title": "CDC Internship — DE Shaw",
     "author": "Jothi Prakash",
     "company": "D.E. Shaw",
@@ -55,7 +253,7 @@
     "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*wW6Rk1lhiY6H9p9-"
   },
   {
-    "id": 6,
+    "id": 24,
     "title": "CDC — A Step Along the Journey",
     "author": "Monal Prasad",
     "company": "Microsoft",
@@ -66,7 +264,7 @@
     "authorImage": "https://avatars.githubusercontent.com/u/58178738?v=4"
   },
   {
-    "id": 7,
+    "id": 25,
     "title": "An Overwhelming Episode",
     "author": "Utsav Mehta",
     "company": "Salesforce",
@@ -77,7 +275,7 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*g1kO9wzvC_3oR-XlDyJYrg.jpeg"
   },
   {
-    "id": 8,
+    "id": 26,
     "title": "CDC Chronicles",
     "author": "Aryan Singh",
     "company": "Glean",
@@ -88,7 +286,7 @@
     "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*71Fzz_ce-eWFlmCF"
   },
   {
-    "id": 9,
+    "id": 27,
     "title": "And Finally I Could Chill My Way Through College Now",
     "author": "Ashish Rekhani",
     "company": "Nutanix",
@@ -99,7 +297,7 @@
     "authorImage": "/default-avatar.svg"
   },
   {
-    "id": 10,
+    "id": 28,
     "title": "CDC Chronicles",
     "author": "Snehal Reddy Koukuntla",
     "company": "Microsoft",
@@ -110,7 +308,7 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*JqgECbvwdm7IJF7yugp0dg.jpeg"
   },
   {
-    "id": 11,
+    "id": 29,
     "title": "D-Day: The Internship Chronicles",
     "author": "Vinit Raj",
     "company": "D.E. Shaw",
@@ -121,7 +319,7 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*HZlY-hugE8YifvMT24QCBQ.jpeg"
   },
   {
-    "id": 12,
+    "id": 30,
     "title": "CDC Chapter",
     "author": "Sahil Jindal",
     "company": "Microsoft",
@@ -132,7 +330,7 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*t2aT3iWNGu4h2RaTA2WZMQ.jpeg"
   },
   {
-    "id": 13,
+    "id": 31,
     "title": "CDC Chronicles: The Internship Saga",
     "author": "Avi Sankritya",
     "company": "Goldman Sachs",
@@ -143,7 +341,7 @@
     "authorImage": "https://miro.medium.com/v2/da:true/resize:fill:200:200/0*9AjyqZ__zbbE1LKA"
   },
   {
-    "id": 14,
+    "id": 32,
     "title": "The CDC Chapter",
     "author": "Somay Chopra",
     "company": "Goldman Sachs",
@@ -154,7 +352,7 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:200:200/1*5N_eq5EEtV0N4zSRxraORQ.jpeg"
   },
   {
-    "id": 15,
+    "id": 33,
     "title": "My Internship Experience with Facebook London",
     "author": "Sree Theerdha",
     "company": "Meta",
@@ -165,7 +363,7 @@
     "authorImage": "https://miro.medium.com/v2/resize:fill:176:176/1*rowITPYx-IvzuKdEHAKQIw@2x.jpeg"
   },
   {
-    "id": 16,
+    "id": 34,
     "title": "A Post CDC Interview",
     "author": "Siba Panigrahi",
     "company": "Adobe",
