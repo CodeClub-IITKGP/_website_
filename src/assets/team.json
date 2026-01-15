@@ -1,16 +1,34 @@
 [
   {
-    "name": "Abhinav Sen",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "abhinav sen.jpeg",
-    "role": "Associate Member"
     "name": "Niranjana Reddy B S",
     "roll": "21CS30033",
     "linkedin": "https://www.linkedin.com/in/niranjana-reddy-b-s-1402a52a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "github": "https://github.com/Niranjanareddybs",
     "dp": "niranjana reddy.jpg",
+    "role": "Advisor"
+  },
+  {
+    "name": "Yash Kumar",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/yash-kumar-53280922b/",
+    "github": "https://github.com/Yash23kr",
+    "dp": "yash kumar.jpeg",
+    "role": "Advisor"
+  },
+  {
+    "name": "Navaneeth Shaji",
+    "roll": "21CS30032",
+    "linkedin": "https://www.linkedin.com/in/navaneeth-shaji-85b9b6228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "github": "https://github.com/TheMockingJay1013",
+    "dp": "Navaneeth Shaji.jpeg",
+    "role": "Advisor"
+  },
+  {
+    "name": "Karthikeya Yelishetty",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "karthikeya yelishetty.jpg",
     "role": "Advisor"
   },
   {
@@ -38,6 +56,30 @@
     "role": "Advisor"
   },
   {
+    "name": "Parth Patil",
+    "roll": "22CS30041",
+    "linkedin": "https://www.linkedin.com/in/parth-patil-166722257/",
+    "github": "https://noobman99.github.io/",
+    "dp": "parth patil.jpeg",
+    "role": "President"
+  },
+  {
+    "name": "Pranaya Chowdary",
+    "roll": "22CS10070",
+    "linkedin": "https://www.linkedin.com/in/pranaya-chowdary",
+    "github": "https://github.com/pransverse",
+    "dp": "pranaya chowdary.jpeg",
+    "role": "Secretary"
+  },
+  {
+    "name": "Pranesh Vijay",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/praneshvijay/",
+    "github": "https://www.linkedin.com/in/praneshvijay/",
+    "dp": "pranesh vijay.jpeg",
+    "role": "President"
+  },
+  {
     "name": "Aditya Panda",
     "roll": "",
     "linkedin": "https://www.linkedin.com/in/aditya-panda-9b668a254/",
@@ -54,46 +96,6 @@
     "role": "Secretary"
   },
   {
-    "name": "Aman Sharma",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "aman sharma.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Anand Parikh",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "anand parikh.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Aniket Kumar",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "aniket kumar.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Anubhav Dhar",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "anubhav dhar.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Aryan Mehta",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "aryan mehta.jpeg",
-    "role": "Associate Member"
-  },
-  {
     "name": "Aryan Sanghi",
     "roll": "",
     "linkedin": "https://www.linkedin.com/in/aryan-sanghi-1188b025a/",
@@ -102,39 +104,27 @@
     "role": "Secretary"
   },
   {
-    "name": "Ashutosh Kumar Singh",
+    "name": "Saishree Pradhan",
     "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "ashutosh kumar singh.jpeg",
-    "role": "Associate Member"
+    "linkedin": "https://www.linkedin.com/in/saishree-pradhan-14b823289/",
+    "github": "https://www.linkedin.com/in/saishree-pradhan-14b823289/",
+    "dp": "saishree pradhan.jpeg",
+    "role": "Secretary"
   },
   {
-    "name": "Ashwin Prasanth",
-    "roll": "21CS30009",
-    "linkedin": "https://www.linkedin.com/in/ashwin-prasanth/",
-    "github": "https://github.com/ashwinpra",
-    "dp": "ashwin prasanth.jpeg",
-    "role": "Advisor"
+    "name": "Sathvik Pratapagiri",
+    "roll": "22CS10053",
+    "linkedin": "https://www.linkedin.com/in/sathvik-pratapagiri-9094b5283/",
+    "github": "https://github.com/sathvik2k5",
+    "dp": "sathvik pratapagiri.jpeg",
+    "role": "Secretary"
   },
   {
-    "name": "Chinmay Bhusari",
+    "name": "Tanishka Rahate",
     "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "chinmay bhusari.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Deepsikha Behera",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "deepsikha behera.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "dp": "aryan sanghi.jpeg",
+    "linkedin": "https://www.linkedin.com/in/tanishka-rahate-5a7378267/",
+    "github": "https://www.linkedin.com/in/tanishka-rahate-5a7378267/",
+    "dp": "tanishka rahate.jpeg",
     "role": "Secretary"
   },
   {
@@ -161,316 +151,7 @@
     "dp": "Harshit Jain.jpg",
     "role": "Secretary"
   },
-  {
-    "name": "Jay Jani",
-    "roll": "23CS10027",
-    "linkedin": "https://www.linkedin.com/in/jay-jani-7a68542b0",
-    "github": "https://github.com/jayjani0011",
-    "dp": "jay jani.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Karthikeya Yelishetty",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "karthikeya yelishetty.jpg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Krish Charniya",
-    "roll": "23CS10012",
-    "linkedin": "https://www.linkedin.com/in/krish-charniya-b39714291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "https://github.com/chrisrex007/",
-    "dp": "Krish Charniya.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Krish Khimasia",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
-    "github": "https://www.linkedin.com/in/krish-khimasia/",
-    "dp": "krish khimasia.jpeg",
-    "role": "Finance Head"
-  },
-  {
-    "name": "M.Sai Pragnaan",
-    "roll": "23CS10043",
-    "linkedin": "https://www.linkedin.com/in/marala-sai-pragnaan-906580291/",
-    "github": "https://github.com/SaiPragnaan",
-    "dp": "Sai Pragnaan.jpeg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Madhav Manu",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Madhav Manu.jpg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Mayank Kumar",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "mayank kumar.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Mehul Mathur",
-    "roll": "23CS30033",
-    "linkedin": "https://www.linkedin.com/in/mehul-mathur05",
-    "github": "https://github.com/mehulmathur05",
-    "dp": "mehul mathur.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Monal Prasad",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "monal prasad.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Mradul Agarwal",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "mradul agarwal.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Navaneeth Shaji",
-    "roll": "21CS30032",
-    "linkedin": "https://www.linkedin.com/in/navaneeth-shaji-85b9b6228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "github": "https://github.com/TheMockingJay1013",
-    "dp": "Navaneeth Shaji.jpeg",
-    "role": "Advisor"
-  },
-  {
-    "name": "Neha Dalmia",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "neha dalmia.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Niranjana Reddy B S",
-    "roll": "21CS30033",
-    "linkedin": "https://www.linkedin.com/in/niranjana-reddy-b-s-1402a52a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "https://github.com/Niranjanareddybs",
-    "dp": "niranjana reddy.jpg",
-    "role": "Advisor"
-  },
-  {
-    "name": "Nisarg Upadhyaya",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "nisarg upadhyaya.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Oishi Nandi",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Oishi Nandi.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Parandhaman Gokul",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Parandhaman Gokul.jpg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Parth Jindal",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "parth jindal.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "dp": "harshit jain.jpeg",
-    "role": "Secretary"
-  },
-  {
-    "name": "Parth Patil",
-    "roll": "22CS30041",
-    "linkedin": "https://www.linkedin.com/in/parth-patil-166722257/",
-    "github": "https://noobman99.github.io/",
-    "dp": "parth patil.jpeg",
-    "role": "President"
-  },
-  {
-    "name": "Pranav Rajput",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "pranav rajput.jpeg",
-    "role": "Associate Member"
-    "role": "Secretary"
-  },
-  {
-    "name": "Pranaya Chowdary",
-    "roll": "22CS10070",
-    "linkedin": "https://www.linkedin.com/in/pranaya-chowdary",
-    "github": "https://github.com/pransverse",
-    "dp": "pranaya chowdary.jpeg",
-    "role": "Secretary"
-  },
-  {
-    "name": "Pranesh Vijay",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/praneshvijay/",
-    "github": "https://www.linkedin.com/in/praneshvijay/",
-    "dp": "pranesh vijay.jpeg",
-    "role": "President"
-  },
-  {
-    "name": "Pratik Kumar Verma",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Pratik Kumar Verma.jpg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Pratyush Parackal",
-    "roll": "23CS30040",
-    "linkedin": "https://www.linkedin.com/in/pratyush-parackal-4b7b77287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "https://github.com/mystiboom",
-    "dp": "Pratyush Parackal.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Prerit Paliwal",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "prerit paliwal.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Rajas Bhatt",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "rajas bhatt.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Rakshit Ranka",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Rakshit Ranka.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Rishi Songirkar",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Rishi Songirkar.jpeg",
-    "role": "Associate Member"
-    "role": "Secretary"
-  },
-  {
-    "name": "Saishree Pradhan",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/saishree-pradhan-14b823289/",
-    "github": "https://www.linkedin.com/in/saishree-pradhan-14b823289/",
-    "dp": "saishree pradhan.jpeg",
-    "role": "Secretary"
-  },
-  {
-    "name": "Sandip Chakrobarty",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "sandip chakrobarty.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Sathvik Pratapagiri",
-    "roll": "22CS10053",
-    "linkedin": "https://www.linkedin.com/in/sathvik-pratapagiri-9094b5283/",
-    "github": "https://github.com/sathvik2k5",
-    "dp": "sathvik pratapagiri.jpeg",
-    "role": "Secretary"
-  },
-  {
-    "name": "Satwik Chappidi",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "satwik chappidi.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Shashvat Gupta",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "shashvat gupta.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Shatakshi Singh",
-    "roll": "23CS30048",
-    "linkedin": "https://www.linkedin.com/in/shatakshi-singh-38616b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "github.com/shatakshi455",
-    "dp": "shatakshi singh.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Shivam Raj",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "shivam raj.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Shivansh Shukla",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "shivansh shukla.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Shourya Godha",
-    "roll": "23CS30050",
-    "linkedin": "https://www.linkedin.com/in/shourya-godha-73050b28a/",
-    "github": "https://rb.gy/mqun84",
-    "dp": "Shourya Godha.jpeg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Shrey Nayakpara",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "Shrey Nayakpara.jpg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Shreya Bose",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/shreya-bose-737100253/",
-    "github": "https://github.com/ShreyaBose04",
-    "dp": "shreya bose.jpeg",
-    "role": "Secretary"
-  },
+
   {
     "name": "Shreya Bose",
     "roll": "",
@@ -504,6 +185,54 @@
     "role": "Secretary"
   },
   {
+    "name": "Jay Jani",
+    "roll": "23CS10027",
+    "linkedin": "https://www.linkedin.com/in/jay-jani-7a68542b0",
+    "github": "https://github.com/jayjani0011",
+    "dp": "jay jani.jpg",
+    "role": "Coordinator"
+  },
+  {
+    "name": "Krish Charniya",
+    "roll": "23CS10012",
+    "linkedin": "https://www.linkedin.com/in/krish-charniya-b39714291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "github": "https://github.com/chrisrex007/",
+    "dp": "Krish Charniya.jpg",
+    "role": "Coordinator"
+  },
+  {
+    "name": "Madhav Manu",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "Madhav Manu.jpg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Mehul Mathur",
+    "roll": "23CS30033",
+    "linkedin": "https://www.linkedin.com/in/mehul-mathur05",
+    "github": "https://github.com/mehulmathur05",
+    "dp": "mehul mathur.jpg",
+    "role": "Coordinator"
+  },
+    {
+    "name": "Shatakshi Singh",
+    "roll": "23CS30048",
+    "linkedin": "https://www.linkedin.com/in/shatakshi-singh-38616b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "github": "github.com/shatakshi455",
+    "dp": "shatakshi singh.jpg",
+    "role": "Coordinator"
+  },
+  {
+    "name": "Shourya Godha",
+    "roll": "23CS30050",
+    "linkedin": "https://www.linkedin.com/in/shourya-godha-73050b28a/",
+    "github": "https://rb.gy/mqun84",
+    "dp": "Shourya Godha.jpeg",
+    "role": "Coordinator"
+  },
+    {
     "name": "M.Sai Pragnaan",
     "roll": "23CS10043",
     "linkedin": "https://www.linkedin.com/in/marala-sai-pragnaan-906580291/",
@@ -528,12 +257,68 @@
     "role": "Coordinator"
   },
   {
-    "name": "Tanishka Rahate",
+    "name": "Oishi Nandi",
     "roll": "",
-    "linkedin": "https://www.linkedin.com/in/tanishka-rahate-5a7378267/",
-    "github": "https://www.linkedin.com/in/tanishka-rahate-5a7378267/",
-    "dp": "tanishka rahate.jpeg",
-    "role": "Secretary"
+    "linkedin": "",
+    "github": "",
+    "dp": "Oishi Nandi.jpeg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Parandhaman Gokul",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "Parandhaman Gokul.jpg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Pratik Kumar Verma",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "Pratik Kumar Verma.jpg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Pratyush Parackal",
+    "roll": "23CS30040",
+    "linkedin": "https://www.linkedin.com/in/pratyush-parackal-4b7b77287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "github": "https://github.com/mystiboom",
+    "dp": "Pratyush Parackal.jpg",
+    "role": "Coordinator"
+  },
+  {
+    "name": "Rakshit Ranka",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "Rakshit Ranka.jpeg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Rishi Songirkar",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "Rishi Songirkar.jpeg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Satwik Chappidi",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "satwik chappidi.jpeg",
+    "role": "Associate Member"
+  },
+  {
+    "name": "Shrey Nayakpara",
+    "roll": "",
+    "linkedin": "",
+    "github": "",
+    "dp": "Shrey Nayakpara.jpg",
+    "role": "Associate Member"
   },
   {
     "name": "Tanishq Prasad",
@@ -550,125 +335,5 @@
     "github": "",
     "dp": "Tanishq Saxena.jpg",
     "role": "Associate Member"
-  },
-  {
-    "name": "Umika Agarwal",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "umika agarwal.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Vaasu Singla",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/vaasu-singla-b344a427a/",
-    "github": "https://www.linkedin.com/in/vaasu-singla-b344a427a/",
-    "dp": "vaasu singla.jpeg",
-    "role": "Secretary"
-  },
-  {
-    "name": "Vinet Amol Pippal",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "vinet amol pippal.jpeg",
-    "role": "Associate Member"
-  },
-  {
-    "name": "Vishwa Gangadhar",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/vishwa-gangadhar-s-b60442254/",
-    "github": "https://www.linkedin.com/in/vishwa-gangadhar-s-b60442254/",
-    "dp": "vishwa gangadhar.jpeg",
-    "role": "Secretary"
-  },
-  {
-    "name": "Vivek Jaiswal",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "vivek jaiswal.jpeg",
-    "role": "Associate Member"
-    "dp": "soham das.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Shourya Godha",
-    "roll": "23CS30050",
-    "linkedin": "https://www.linkedin.com/in/shourya-godha-73050b28a/",
-    "github": "https://rb.gy/mqun84",
-    "dp": "shourya godha.jpeg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Pratyush Parackal",
-    "roll": "23CS30040",
-    "linkedin": "https://www.linkedin.com/in/pratyush-parackal-4b7b77287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "https://github.com/mystiboom",
-    "dp": "pratyush parackal.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Shatakshi Singh",
-    "roll": "23CS30048",
-    "linkedin": "https://www.linkedin.com/in/shatakshi-singh-38616b291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "github.com/shatakshi455",
-    "dp": "shatakshi singh.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Krish Charniya",
-    "roll": "23CS10012",
-    "linkedin": "https://www.linkedin.com/in/krish-charniya-b39714291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "github": "https://github.com/chrisrex007/",
-    "dp": "krish charniya.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Jay Jani",
-    "roll": "23CS10027",
-    "linkedin": "https://www.linkedin.com/in/jay-jani-7a68542b0",
-    "github": "https://github.com/jayjani0011",
-    "dp": "jay jani.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Mehul Mathur",
-    "roll": "23CS30033",
-    "linkedin": "https://www.linkedin.com/in/mehul-mathur05",
-    "github": "https://github.com/mehulmathur05",
-    "dp": "mehul mathur.jpg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Srishti Somya",
-    "roll": "23CS30055",
-    "linkedin": "https://www.linkedin.com/in/srishti-somya-0466a4290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "github": "https://github.com/SrishtiSomya",
-    "dp": "srishti somya.jpeg",
-    "role": "Coordinator"
-  },
-  {
-    "name": "Yash Kumar",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/yash-kumar-53280922b/",
-    "github": "https://github.com/Yash23kr",
-    "dp": "yash kumar.jpeg",
-    "role": "Tech Lead"
-  },
-  {
-    "name": "Yatindra Indoria",
-    "roll": "",
-    "linkedin": "",
-    "github": "",
-    "dp": "yatindra indoria.jpeg",
-    "role": "Associate Member"
-    "name": "Krish Khimasia",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
-    "github": "https://www.linkedin.com/in/krish-khimasia/",
-    "dp": "krish khimasia.jpeg",
-    "role": "Finance Head"
   }
 ]
