@@ -13,6 +13,13 @@ import {
   Music,
 } from "lucide-react";
 
+import bimonthly_codenite from "../assets/events_img/bimonthly_codenite.jpeg";
+import freshers_codenite from "../assets/events_img/freshers_codenite.jpeg";
+import bitwise from "../assets/events_img/bitwise.jpeg";
+import freshers_nite1 from "../assets/events_img/freshers_nite1.jpeg";
+import sports_day from "../assets/events_img/sports_day.jpeg";
+import farewell from "../assets/events_img/farewell.jpeg";
+
 const Events = () => {
   const [activeSection, setActiveSection] = useState("codenites");
 
@@ -136,6 +143,7 @@ const Events = () => {
           <div className="space-y-16">
             <EventCard
               title="Bimonthly CodeNites"
+              image={bimonthly_codenite}
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.4)]"
               borderColor="hover:border-blue-500/50"
               icon={<Repeat className="text-blue-400" />}
@@ -150,6 +158,7 @@ const Events = () => {
             <EventCard
               title="Freshers' CodeNite"
               reversed
+              image={freshers_codenite}
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)]"
               borderColor="hover:border-green-500/50"
               icon={<Star className="text-green-400" />}
@@ -164,6 +173,7 @@ const Events = () => {
             />
             <EventCard
               title="Bitwise CodeNite"
+              image={bitwise}
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(168,85,247,0.4)]"
               borderColor="hover:border-purple-500/50"
               icon={<Moon className="text-purple-400" />}
@@ -253,6 +263,7 @@ const Events = () => {
           <div className="space-y-16">
             <EventCard
               title="Fresher's Nite"
+              image={freshers_nite1}
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(234,179,8,0.4)]"
               borderColor="hover:border-yellow-500/50"
               icon={<Music className="text-yellow-400" />}
@@ -268,6 +279,7 @@ const Events = () => {
             <EventCard
               title="CSE Sports Day"
               reversed
+              image={sports_day}
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(249,115,22,0.4)]"
               borderColor="hover:border-orange-500/50"
               icon={<Dumbbell className="text-orange-400" />}
@@ -282,6 +294,7 @@ const Events = () => {
             />
             <EventCard
               title="Farewell Party"
+              image={farewell}
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)]"
               borderColor="hover:border-red-500/50"
               icon={<GraduationCap className="text-red-400" />}
@@ -308,6 +321,7 @@ const EventCard = ({
   content,
   icon,
   features,
+  image,
   reversed,
   glowColor,
   borderColor,
@@ -342,15 +356,16 @@ const EventCard = ({
         ))}
       </ul>
     </div>
-    <div className="flex-1 w-full aspect-video bg-gray-900 border border-white/10 rounded-2xl flex flex-col items-center justify-center text-gray-600 relative overflow-hidden group">
-      <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-700 opacity-40">
-        📸
-      </div>
-      <span className="text-xs font-mono uppercase tracking-widest opacity-30">
-        Image: {title}
-      </span>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-    </div>
+    <div className="flex-1 w-full aspect-video border border-white/10 rounded-2xl overflow-hidden relative group">
+  <img
+    src={image}
+    alt={title}
+    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+</div>
+
   </motion.div>
 );
 
