@@ -1,16 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  User,
-  Mail,
-  MapPin,
-  Globe,
-  Share2,
-  Camera,
-  MessageSquare,
-  Send,
-  GraduationCap,
-  Briefcase,
-} from "lucide-react";
+import { User, GraduationCap } from "lucide-react";
 import teamData from "../assets/team.json";
 
 const Contact = () => {
