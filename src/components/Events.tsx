@@ -183,7 +183,6 @@ const Events = () => {
                 "Ultimate coding challenge",
                 "Community collaboration",
                 "Legendary coder status",
-                "Ultimate coding crown",
               ]}
             />
           </div>
@@ -267,12 +266,12 @@ const Events = () => {
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(234,179,8,0.4)]"
               borderColor="hover:border-yellow-500/50"
               icon={<Music className="text-yellow-400" />}
-              content="This event marks the grand welcome of our newest cohort of CSE students, kicking off their exciting journey at IIT Kharagpur. Imagine a night filled with vibrant performances, dazzling lights, and infectious energy. Freshers showcase their hidden talents through song, dance, musical ensembles, captivating instrumentals, and even magic shows. The night is sprinkled with fun-filled activities, including funny Q&A sessions and stand-up comedy acts."
+              content="This event marks the grand welcome of our newest cohort of CSE students, kicking off their exciting journey at IIT Kharagpur. Imagine a night filled with vibrant performances, dazzling lights, and infectious energy. Freshers showcase their hidden talents through song, dance, musical ensembles, captivating instrumentals, and even magic shows. The night is sprinkled with fun-filled activities, including funny quiz sessions and stand-up comedy acts."
               features={[
                 "Song and dance performances",
                 "Musical ensembles & instrumentals",
                 "Magic shows and skits",
-                "Q&A sessions and comedy",
+                "Quiz sessions and comedy",
                 "Community bonding activities",
               ]}
             />
@@ -283,12 +282,11 @@ const Events = () => {
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(249,115,22,0.4)]"
               borderColor="hover:border-orange-500/50"
               icon={<Dumbbell className="text-orange-400" />}
-              content="This day is a testament to the diverse athletic prowess and the spirit of sportsmanship that runs deep within our CSE community. Witness students from different years and disciplines engage in friendly rivalry across various sporting events. Whether it's the adrenaline rush on the basketball court, strategic finesse on the chessboard, or sheer determination on the track, the day is filled with excitement. Professors and staff join us, adding another layer of connection."
+              content="This day is a testament to the diverse athletic prowess and the spirit of sportsmanship that runs deep within our CSE community. Witness students from different years and disciplines engage in friendly rivalry across various sporting events. Whether it's the adrenaline rush on the Tata Steel Ground, or sheer determination on the track, the day is filled with excitement. Professors and students join us, adding another layer of connection."
               features={[
-                "Basketball tournaments",
-                "Chess competitions",
+                "Cricket tournament",
                 "Track and field events",
-                "Professor & staff participation",
+                "Professor & students participation",
                 "Awards ceremony",
               ]}
             />
@@ -357,15 +355,14 @@ const EventCard = ({
       </ul>
     </div>
     <div className="flex-1 w-full aspect-video border border-white/10 rounded-2xl overflow-hidden relative group">
-  <img
-    src={image}
-    alt={title}
-    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-  />
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
 
-  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-</div>
-
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+    </div>
   </motion.div>
 );
 

@@ -37,7 +37,7 @@
     "linkedin": "https://www.linkedin.com/in/tanishq-prasad/",
     "github": "https://github.com/optimus1010t",
     "dp": "tanishq prasad.jpeg",
-    "role": "Finance Head"
+    "role": "Advisor"
   },
   {
     "name": "Ashwin Prasanth",
@@ -46,6 +46,13 @@
     "github": "https://github.com/ashwinpra",
     "dp": "ashwin prasanth.jpeg",
     "role": "Advisor"
+  },
+  {
+    "name": "Pranesh Vijay",
+    "role": "President",
+    "linkedin": "https://www.linkedin.com/in/praneshvijay/",
+    "github": "https://www.linkedin.com/in/praneshvijay/",
+    "dp": "pranesh vijay.jpeg"
   },
   {
     "name": "Parth Patil",
@@ -64,20 +71,12 @@
     "role": "Secretary"
   },
   {
-    "name": "Pranesh Vijay",
-    "roll": "",
-    "linkedin": "https://www.linkedin.com/in/praneshvijay/",
-    "github": "https://www.linkedin.com/in/praneshvijay/",
-    "dp": "pranesh vijay.jpeg",
-    "role": "President"
-  },
-  {
     "name": "Aditya Panda",
     "roll": "",
     "linkedin": "https://www.linkedin.com/in/aditya-panda-9b668a254/",
     "github": "https://www.linkedin.com/in/aditya-panda-9b668a254/",
     "dp": "aditya panda.jpeg",
-    "role": "Secretary"
+    "role": "Finance Head"
   },
   {
     "name": "Aman Antil",
@@ -85,7 +84,7 @@
     "linkedin": "https://www.linkedin.com/in/aman-antil-a2aaa2273/",
     "github": "https://www.linkedin.com/in/aman-antil-a2aaa2273/",
     "dp": "aman antil.jpeg",
-    "role": "Secretary"
+    "role": "CP Head"
   },
   {
     "name": "Aryan Sanghi",
@@ -93,7 +92,7 @@
     "linkedin": "https://www.linkedin.com/in/aryan-sanghi-1188b025a/",
     "github": "https://www.linkedin.com/in/aryan-sanghi-1188b025a/",
     "dp": "Aryan Sanghi.jpg",
-    "role": "Secretary"
+    "role": "CP Head"
   },
   {
     "name": "Saishree Pradhan",
@@ -101,7 +100,7 @@
     "linkedin": "https://www.linkedin.com/in/saishree-pradhan-14b823289/",
     "github": "https://www.linkedin.com/in/saishree-pradhan-14b823289/",
     "dp": "saishree pradhan.jpeg",
-    "role": "Secretary"
+    "role": "Vice President"
   },
   {
     "name": "Sathvik Pratapagiri",
@@ -117,7 +116,7 @@
     "linkedin": "https://www.linkedin.com/in/tanishka-rahate-5a7378267/",
     "github": "https://www.linkedin.com/in/tanishka-rahate-5a7378267/",
     "dp": "tanishka rahate.jpeg",
-    "role": "Secretary"
+    "role": "Design Head"
   },
   {
     "name": "Devansha Dhanker",
@@ -141,7 +140,7 @@
     "linkedin": "https://www.linkedin.com/in/harshit-jain-4081a0256/",
     "github": "https://harshit-jain52.github.io/",
     "dp": "Harshit Jain.jpg",
-    "role": "Secretary"
+    "role": "Tech Head"
   },
 
   {
@@ -150,7 +149,7 @@
     "linkedin": "https://www.linkedin.com/in/shreya-bose-737100253/",
     "github": "https://github.com/ShreyaBose04",
     "dp": "shreya bose.jpeg",
-    "role": "Secretary"
+    "role": "Finance Head"
   },
   {
     "name": "Vaasu Singla",
@@ -158,7 +157,7 @@
     "linkedin": "https://www.linkedin.com/in/vaasu-singla-b344a427a/",
     "github": "https://www.linkedin.com/in/vaasu-singla-b344a427a/",
     "dp": "vaasu singla.jpeg",
-    "role": "Secretary"
+    "role": "Vice President"
   },
   {
     "name": "Vishwa Gangadhar",
