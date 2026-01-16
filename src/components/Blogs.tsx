@@ -36,7 +36,7 @@ const Blogs = () => {
           </div> */}
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
             <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
-              Interns for the Summer of '25
+              CodeClub Blogs
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
@@ -68,6 +68,17 @@ const Blogs = () => {
             </section>
           ))}
         </div>
+      </div>
+      <div className="flex justify-center">
+        <p className="text-xl md:text-2xl text-gray-400 max-w-3xl py-10 leading-relaxed">
+          Find more blogs{" "}
+          <a
+            href="https://codeclub-iitkgp.medium.com/internship-chronicles-archive-538b83f08c6b"
+            className="text-white"
+          >
+            here
+          </a>
+        </p>
       </div>
     </div>
   );
