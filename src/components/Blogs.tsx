@@ -1,19 +1,22 @@
 import { motion } from "framer-motion";
 import { User, Briefcase, Calendar, Globe, ArrowRight } from "lucide-react";
-import allStories from "../assets/internStories.json";
+import allStories from "../internStories.json";
 
 const Blogs = () => {
   // Grouping logic preserved
-  const storiesByYear = allStories.reduce((acc, story) => {
-    if (!acc[story.year]) {
-      acc[story.year] = [];
-    }
-    acc[story.year].push(story);
-    return acc;
-  }, {} as { [key: string]: typeof allStories });
+  const storiesByYear = allStories.reduce(
+    (acc, story) => {
+      if (!acc[story.year]) {
+        acc[story.year] = [];
+      }
+      acc[story.year].push(story);
+      return acc;
+    },
+    {} as { [key: string]: typeof allStories },
+  );
 
   const sortedYears = Object.keys(storiesByYear).sort(
-    (a, b) => parseInt(b) - parseInt(a)
+    (a, b) => parseInt(b) - parseInt(a),
   );
 
   return (

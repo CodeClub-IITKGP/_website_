@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
 import { User, GraduationCap } from "lucide-react";
-import teamData from "../assets/team.json";
+
+// type TeamMember = {
+//   name: string;
+//   role: string;
+//   linkedin: string;
+//   github: string;
+//   dp: string;
+// };
+
+// const res = await fetch("/assets/team.json");
+// const teamData: TeamMember[] = await res.json();
+import teamData from "../team.json";
 
 const Contact = () => {
   // Filter team data into governing batch and general members
@@ -13,19 +24,19 @@ const Contact = () => {
       "CP Head",
       "Design Head",
       "Vice President",
-    ].includes(member.role)
+    ].includes(member.role),
   );
 
   const advisors = teamData.filter((member) =>
-    ["Advisor"].includes(member.role)
+    ["Advisor"].includes(member.role),
   );
   const coordinators = teamData.filter((member) =>
-    ["Coordinator"].includes(member.role)
+    ["Coordinator"].includes(member.role),
   );
 
   // const coordi = teamData.filter((member)=>)
   const AssociateMembers = teamData.filter((member) =>
-    ["Associate Member"].includes(member.role)
+    ["Associate Member"].includes(member.role),
   );
 
   return (
@@ -62,7 +73,7 @@ const Contact = () => {
           >
             <div className="w-48 h-48 flex-shrink-0 bg-gray-900 rounded-2xl border border-white/10 relative overflow-hidden group shadow-[0_15px_50px_-25px_rgba(59,130,246,0.4)]">
               <img
-                src={`/src/assets/imgs/sandip chakrobarty.jpeg`}
+                src={`assets/imgs/sandip chakrobarty.jpeg`}
                 alt="Dr. Sandip Chakraborty"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -280,7 +291,7 @@ const MemberCard = ({ color, name, role, image }: any) => {
       <div className="aspect-square w-full bg-[#111418] relative overflow-hidden flex items-center justify-center">
         {image ? (
           <img
-            src={`/src/assets/imgs/${image}`}
+            src={`assets/imgs/${image}`}
             alt={name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
