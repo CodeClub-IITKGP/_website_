@@ -137,7 +137,7 @@
   {
     "name": "Harshit Jain",
     "roll": "22CS10030",
-    "linkedin": "https://www.linkedin.com/in/harshit-jain-4081a0256/",
+    "linkedin": "https://www.linkedin.com/in/harshitjain52/",
     "github": "https://harshit-jain52.github.io/",
     "dp": "Harshit Jain.jpg",
     "role": "Tech Head"
@@ -172,7 +172,7 @@
     "roll": "23CS10027",
     "linkedin": "https://www.linkedin.com/in/jay-jani-7a68542b0",
     "github": "https://github.com/jayjani0011",
-    "dp": "jay jani.jpg",
+    "dp": "Jay Jani.jpg",
     "role": "Coordinator"
   },
   {
@@ -186,7 +186,7 @@
   {
     "name": "Madhav Manu",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/madhavmanu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "github": "",
     "dp": "Madhav Manu.jpg",
     "role": "Associate Member"
@@ -196,7 +196,7 @@
     "roll": "23CS30033",
     "linkedin": "https://www.linkedin.com/in/mehul-mathur05",
     "github": "https://github.com/mehulmathur05",
-    "dp": "mehul mathur.jpg",
+    "dp": "Mehul Mathur.jpeg",
     "role": "Coordinator"
   },
     {
@@ -216,11 +216,27 @@
     "role": "Coordinator"
   },
     {
+    "name": "Kartik Pandey",
+    "roll": "23CS30050",
+    "linkedin": "https://www.linkedin.com/in/shourya-godha-73050b28a/",
+    "github": "https://rb.gy/mqun84",
+    "dp": "Kartik Pandey.jpg",
+    "role": "Coordinator"
+  },
+      {
+    "name": "Thania Joshi",
+    "roll": "23CS30050",
+    "linkedin": "https://www.linkedin.com/in/shourya-godha-73050b28a/",
+    "github": "https://rb.gy/mqun84",
+    "dp": "Thania Joshi.jpg",
+    "role": "Coordinator"
+  },
+    {
     "name": "M.Sai Pragnaan",
     "roll": "23CS10043",
     "linkedin": "https://www.linkedin.com/in/marala-sai-pragnaan-906580291/",
     "github": "https://github.com/SaiPragnaan",
-    "dp": "sai pragnaan.jpg",
+    "dp": "Sai Pragnaan.jpeg",
     "role": "Coordinator"
   },
   {
@@ -240,9 +256,31 @@
     "role": "Coordinator"
   },
   {
+    "name": "Monica Reddy",
+    "roll": "23CS30055",
+    "linkedin": "https://www.linkedin.com/in/srishti-somya-0466a4290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "github": "https://github.com/SrishtiSomya",
+    "dp": "default-avatar.svg",
+    "role": "Coordinator"
+  },  {
+    "name": "Vaibhav Raj",
+    "roll": "23CS30055",
+    "linkedin": "https://www.linkedin.com/in/srishti-somya-0466a4290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "github": "https://github.com/SrishtiSomya",
+    "dp": "default-avatar.svg",
+    "role": "Coordinator"
+  },   {
+    "name": "Nutubilli Gayatri",
+    "roll": "23CS30055",
+    "linkedin": "https://www.linkedin.com/in/srishti-somya-0466a4290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "github": "https://github.com/SrishtiSomya",
+    "dp": "default-avatar.svg",
+    "role": "Coordinator"
+  },
+  {
     "name": "Oishi Nandi",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/oishi-nandi-239516323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "github": "",
     "dp": "Oishi Nandi.jpeg",
     "role": "Associate Member"
@@ -250,7 +288,7 @@
   {
     "name": "Parandhaman Gokul",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/gokul-parandhaman-864ba731b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "github": "",
     "dp": "Parandhaman Gokul.jpg",
     "role": "Associate Member"
@@ -258,7 +296,7 @@
   {
     "name": "Pratik Kumar Verma",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/pratikkrverma",
     "github": "",
     "dp": "Pratik Kumar Verma.jpg",
     "role": "Associate Member"
@@ -274,7 +312,7 @@
   {
     "name": "Rakshit Ranka",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/rakshit-ranka-5992052b9/?originalSubdomain=in",
     "github": "",
     "dp": "Rakshit Ranka.jpeg",
     "role": "Associate Member"
@@ -282,7 +320,7 @@
   {
     "name": "Rishi Songirkar",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/rishi-songirkar-4357a831b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "github": "",
     "dp": "Rishi Songirkar.jpeg",
     "role": "Associate Member"
@@ -298,7 +336,7 @@
   {
     "name": "Shrey Nayakpara",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/shrey-nayakpara-040a56320/",
     "github": "",
     "dp": "Shrey Nayakpara.jpg",
     "role": "Associate Member"
@@ -306,9 +344,185 @@
   {
     "name": "Tanishq Saxena",
     "roll": "",
-    "linkedin": "",
+    "linkedin": "www.linkedin.com/in/tanishq-saxena",
     "github": "",
     "dp": "Tanishq Saxena.jpg",
     "role": "Associate Member"
+  },
+  
+    {
+    "name": "Jinansh Dalal",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/jinansh-dalal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "github": "",
+    "dp": "Jinansh Dalal.jpg",
+    "role": "Associate Member"
+  },
+    {
+    "name": "Ramagiri Sathwik ",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/ramagiri-sathwik-436553322/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BYr0iJQnPSCGYYpSHCQs6EA%3D%3D",
+    "github": "",
+    "dp": "RAMAGIRI SATHWIK.jpeg",
+    "role": "Associate Member"
+  },
+      {
+    "name": "Ritam Banerjee ",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/ramagiri-sathwik-436553322/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BYr0iJQnPSCGYYpSHCQs6EA%3D%3D",
+    "github": "",
+    "role": "Associate Member",
+    "dp": "default-avatar.svg"
+  },
+        {
+    "name": "Ayush Saha ",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/ramagiri-sathwik-436553322/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BYr0iJQnPSCGYYpSHCQs6EA%3D%3D",
+    "github": "",
+    "role": "Associate Member",
+    "dp": "default-avatar.svg"
+  },
+        {
+    "name": "Ridhi Chopra ",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/ramagiri-sathwik-436553322/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BYr0iJQnPSCGYYpSHCQs6EA%3D%3D",
+    "github": "",
+    "role": "Associate Member",
+    "dp": "default-avatar.svg"
+  },
+
+{
+    "name": "Harsh Khasbage",
+    "roll": "21CS10029",
+    "linkedin": "https://www.linkedin.com/in/harshkhasbage77/",
+    "github": "https://github.com/harshkhasbage77",
+    "dp": "harsh khasbage.jpeg",
+    "role": "Alumni"
+  },
+  {
+    "name": "Yash Sirvi",
+    "roll": "21CS10083",
+    "linkedin": "https://www.linkedin.com/in/yash-sirvi-416a87223/",
+    "github": "https://github.com/yashsirvi",
+    "dp": "yash sirvi.jpeg",
+    "role": "Alumni"
+  },
+  {
+    "name": "Harshith Chowdary",
+    "roll": "21CS10042",
+    "linkedin": "https://www.linkedin.com/in/harshith-chowdary-meduri/",
+    "github": "https://github.com/harshith-chowdary",
+    "dp": "harshith chowdary.jpeg",
+    "role": "Alumni"
+  },
+  {
+    "name": "Anit Mangal",
+    "roll": "21CS10005",
+    "linkedin": "https://www.linkedin.com/in/anit-mangal",
+    "github": "https://github.com/anitmangal",
+    "dp": "anit mangal.jpeg",
+    "role": "Alumni"
+  },
+  {
+    "name": "Sanskar Mittal",
+    "roll": "21CS10057",
+    "linkedin": "https://www.linkedin.com/in/sanskar-mittal-50aba123a/",
+    "github": "https://github.com/Illumine69",
+    "dp": "sanskar mittal.jpeg",
+    "role": "Alumni"
+  },{
+    "name": "Yash Kumar",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/yash-kumar-53280922b/",
+    "github": "https://github.com/Yash23kr",
+    "dp": "yash kumar.jpeg",
+    "role": "Alumni"
+  },
+  {
+    "name": "Krish Khimasia",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "krish khimasia.jpeg",
+    "role": "Alumni"
+  },  {
+    "name": "Aman Sharma",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "aman sharma.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Anand Parikh",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "anand parikh.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Aniket Kumar",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "aniket kumar.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Anubhav Dhar",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "anubhav dhar.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Aryna Mehta",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "aryan mehta.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Anand Parikh",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "anand parikh.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Ashutosh Kumar Singh",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "ashutosh kumar singh.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Deepsikha Behera",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "deepsikha behera.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Neha Dalmia",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "neha dalmia.jpeg",
+    "role": "Alumni"
+  },
+    {
+    "name": "Monal Prasad",
+    "roll": "",
+    "linkedin": "https://www.linkedin.com/in/krish-khimasia/",
+    "github": "https://www.linkedin.com/in/krish-khimasia/",
+    "dp": "monal prasad.jpeg",
+    "role": "Alumni"
   }
 ]

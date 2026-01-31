@@ -38,6 +38,7 @@ const Contact = () => {
   const AssociateMembers = teamData.filter((member) =>
     ["Associate Member"].includes(member.role),
   );
+  const Alums = teamData.filter((member) => ["Alumni"].includes(member.role));
 
   return (
     <div className="min-h-screen bg-[#0a0c10] text-gray-100 selection:bg-blue-500/30 font-sans">
@@ -133,21 +134,6 @@ const Contact = () => {
         </section>
 
         <section className="mb-32">
-          <SectionHeader title="Advisors" color="text-green-400" desc="" />
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
-            {advisors.map((member) => (
-              <MemberCard
-                key={member.name}
-                color="green"
-                name={member.name}
-                role={member.role}
-                image={member.dp}
-              />
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-32">
           <SectionHeader title="Coordinator" color="text-green-400" desc="" />
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
             {coordinators.map((member) => (
@@ -176,6 +162,36 @@ const Contact = () => {
                 color="green"
                 name={member.name}
                 role="Associate Member"
+                image={member.dp}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-32">
+          <SectionHeader title="Advisors" color="text-green-400" desc="" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+            {advisors.map((member) => (
+              <MemberCard
+                key={member.name}
+                color="green"
+                name={member.name}
+                role={member.role}
+                image={member.dp}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-32">
+          <SectionHeader title="Alumni" color="text-green-400" desc="" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+            {Alums.map((member) => (
+              <MemberCard
+                key={member.name}
+                color="green"
+                name={member.name}
+                role={member.role}
                 image={member.dp}
               />
             ))}
