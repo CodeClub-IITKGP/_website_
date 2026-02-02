@@ -136,7 +136,7 @@ const Events = () => {
           <div className="space-y-16">
             <EventCard
               title="Bimonthly CodeNites"
-              image="/assets/events_img/bimonthly_codenite.jpeg"
+              image="/_website_/assets/events_img/bimonthly_codenite.jpeg"
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.4)]"
               borderColor="hover:border-blue-500/50"
               icon={<Repeat className="text-blue-400" />}
@@ -151,7 +151,7 @@ const Events = () => {
             <EventCard
               title="Freshers' CodeNite"
               reversed
-              image="/assets/events_img/freshers_codenite.jpeg"
+              image="/_website_/assets/events_img/freshers_codenite.jpeg"
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)]"
               borderColor="hover:border-green-500/50"
               icon={<Star className="text-green-400" />}
@@ -166,7 +166,7 @@ const Events = () => {
             />
             <EventCard
               title="Bitwise CodeNite"
-              image="/assets/events_img/bitwise.jpeg"
+              image="/_website_/assets/events_img/bitwise.jpeg"
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(168,85,247,0.4)]"
               borderColor="hover:border-purple-500/50"
               icon={<Moon className="text-purple-400" />}
@@ -255,7 +255,7 @@ const Events = () => {
           <div className="space-y-16">
             <EventCard
               title="Fresher's Nite"
-              image="/assets/events_img/freshers_nite1.jpeg"
+              image="/_website_/assets/events_img/freshers_nite1.jpeg"
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(234,179,8,0.4)]"
               borderColor="hover:border-yellow-500/50"
               icon={<Music className="text-yellow-400" />}
@@ -271,7 +271,7 @@ const Events = () => {
             <EventCard
               title="CSE Sports Day"
               reversed
-              image="/assets/events_img/sports_day.jpeg"
+              image="/_website_/assets/events_img/sports_day.jpeg"
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(249,115,22,0.4)]"
               borderColor="hover:border-orange-500/50"
               icon={<Dumbbell className="text-orange-400" />}
@@ -285,7 +285,7 @@ const Events = () => {
             />
             <EventCard
               title="Farewell Party"
-              image="/assets/events_img/farewell.jpeg"
+              image="/_website_/assets/events_img/farewell.jpeg"
               glowColor="hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.4)]"
               borderColor="hover:border-red-500/50"
               icon={<GraduationCap className="text-red-400" />}
