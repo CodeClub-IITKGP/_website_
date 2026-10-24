@@ -19,6 +19,12 @@ type Cell = {
   connections: number[];
 };
 
+type TrailParticle = {
+  x: number;
+  y: number;
+  life: number;
+};
+
 const TAU = Math.PI * 2;
 
 function clamp(v: number, a = 0, b = 1) {
@@ -41,6 +47,7 @@ export default function InteractiveGrid() {
   const mouseRef = useRef({ x: -9999, y: -9999 });
   const timeRef = useRef(0);
   const isMobileRef = useRef(false);
+  const particlesRef = useRef<TrailParticle[]>([]);
 
   useEffect(() => {
     const canvas = canvasRef.current!;
@@ -71,8 +78,8 @@ export default function InteractiveGrid() {
       
       // --- CHANGE 1: Smaller cells on mobile ---
       // Changed from 30 to 18 so they look small and sharp on phones
-      const hexRadius = isMobile ? 18 : 25; 
-      const hexSpacing = hexRadius * (isMobile ? 1.7 : 1.8); 
+      const hexRadius = isMobile ? 13 : 19; 
+      const hexSpacing = hexRadius * (isMobile ? 1.9 : 2.0); 
       const rowHeight = hexRadius * Math.sqrt(3);
 
       const cols = Math.floor(gridArea.w / hexSpacing) + 2;
@@ -370,12 +377,87 @@ export default function InteractiveGrid() {
       ctx.lineTo(w, scanY);
       ctx.stroke();
 
+      
+      // --- Mouse Particle Constellation ---
+      if (!isMobile) {
+        const particles = particlesRef.current;
+
+        // Fade particles over time
+        for (const particle of particles) {
+          particle.life -= 0.012;
+        }
+
+        // Remove faded particles
+        particlesRef.current = particles.filter(
+          (particle) => particle.life > 0
+        );
+
+        const activeParticles = particlesRef.current;
+
+        // Draw connections between nearby particles
+        ctx.lineWidth = 1;
+
+        for (let i = 0; i < activeParticles.length; i++) {
+          const a = activeParticles[i];
+
+          for (let j = i + 1; j < activeParticles.length; j++) {
+            const b = activeParticles[j];
+            const distance = Math.hypot(a.x - b.x, a.y - b.y);
+
+            if (distance < 75) {
+              const opacity =
+                (1 - distance / 75) *
+                Math.min(a.life, b.life) *
+                0.45;
+
+              ctx.strokeStyle = `rgba(0, 255, 220, ${opacity})`;
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        // Draw glowing particles
+        for (const particle of activeParticles) {
+          ctx.beginPath();
+          ctx.arc(particle.x, particle.y, 2, 0, TAU);
+          ctx.fillStyle = `rgba(100, 220, 255, ${particle.life})`;
+          ctx.shadowColor = "#00ffc8";
+          ctx.shadowBlur = 8;
+          ctx.fill();
+        }
+
+        ctx.shadowBlur = 0;
+      }
+
       animationRef.current = requestAnimationFrame(render);
+      
     };
 
     const onMove = (e: MouseEvent) => {
-      mouseRef.current.x = e.clientX;
-      mouseRef.current.y = e.clientY;
+      const x = e.clientX;
+      const y = e.clientY;
+    
+      mouseRef.current.x = x;
+      mouseRef.current.y = y;
+    
+      // Create the trail only below the interactive grid
+      if (!isMobileRef.current && y > window.innerHeight * 0.6) {
+        const particles = particlesRef.current;
+        const last = particles[particles.length - 1];
+    
+        // Avoid adding too many particles when the mouse barely moves
+        if (!last || Math.hypot(x - last.x, y - last.y) > 7) {
+          particles.push({ x, y, life: 1 });
+        }
+    
+        // Keep memory and rendering costs bounded
+        if (particles.length > 90) {
+          particles.splice(0, particles.length - 90);
+        }
+      }
     };
 
     const onTouchMove = (e: TouchEvent) => {
@@ -413,6 +495,8 @@ export default function InteractiveGrid() {
     canvas.addEventListener("touchcancel", onTouchEnd);
 
     animationRef.current = requestAnimationFrame(render);
+
+    
 
     return () => {
       window.removeEventListener("resize", resize);

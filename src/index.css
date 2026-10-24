@@ -87,6 +87,15 @@ body,
   outline-offset: 2px;
 }
 
+.energy-cursor-active a,
+.energy-cursor-active button,
+.energy-cursor-active input,
+.energy-cursor-active textarea,
+.energy-cursor-active select,
+.energy-cursor-active [role="button"] {
+  cursor: pointer !important;
+}
+
 /* Improve text readability on mobile */
 @media (max-width: 640px) {
   body {
