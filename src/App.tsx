@@ -4,13 +4,46 @@ import Home from "./components/Home.tsx";
 import Events from "./components/Events.tsx";
 import Blogs from "./components/Blogs.tsx";
 import Contact from "./components/Contact.tsx";
+import EnergyPulseCursor from "./components/EnergyPulseCursor";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const [navVisible, setNavVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const scrollThreshold = 8;
+
+  useEffect(() => {
+    const main = document.querySelector("main");
+    if (!main) return;
+
+    const handleScroll = () => {
+      const currentScrollY = main.scrollTop;
+      const difference = currentScrollY - lastScrollY.current;
+
+      if (currentScrollY <= 10) {
+        setNavVisible(true);
+      } else if (Math.abs(difference) >= scrollThreshold) {
+        setNavVisible(difference < 0);
+      }
+
+      if (Math.abs(difference) >= scrollThreshold) {
+        lastScrollY.current = currentScrollY;
+      }
+    };
+
+    main.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      main.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
+    <>
+    <EnergyPulseCursor />
     <div className="h-screen flex flex-col bg-gray-900 overflow-hidden">
       <main
         className={`flex-1 ${
@@ -28,7 +61,15 @@ function App() {
       </main>
 
       {/* Bottom Navigation Bar - Dark Pill Design */}
-      <nav className="fixed bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 z-50">
+      <nav
+        className={`fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50
+          transition-all duration-300 ease-in-out
+          ${
+            navVisible
+              ? "translate-y-0 opacity-100"
+              : "translate-y-32 opacity-0 pointer-events-none"
+          }`}
+      >
         <div className="bg-gray-900/90 backdrop-blur-md rounded-full px-3 md:px-6 py-2 md:py-3 shadow-2xl border border-gray-700/50">
           <div className="flex items-center space-x-4 md:space-x-8">
             <button
@@ -82,6 +123,7 @@ function App() {
         </div>
       </nav>
     </div>
+  </>
   );
 }
 

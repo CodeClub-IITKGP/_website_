@@ -34,6 +34,29 @@
   color: #888;
 }
 
+/* Hide the normal cursor only where the custom cursor is active */
+.energy-cursor-active,
+.energy-cursor-active body,
+.energy-cursor-active body * {
+  cursor: none !important;
+}
+
+/* Keep normal interactive cursors on links and controls */
+.energy-cursor-active a,
+.energy-cursor-active button,
+.energy-cursor-active input,
+.energy-cursor-active textarea,
+.energy-cursor-active select,
+.energy-cursor-active [role="button"] {
+  cursor: pointer !important;
+}
+
+.energy-cursor-active input,
+.energy-cursor-active textarea {
+  cursor: text !important;
+}
+
+
 /* Mobile responsiveness improvements */
 @media (max-width: 768px) {
   .logo {

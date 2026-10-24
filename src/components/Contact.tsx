@@ -14,16 +14,14 @@ import { User, GraduationCap } from "lucide-react";
 import teamData from "../team.json";
 
 const Contact = () => {
-  // Filter team data into governing batch and general members
+  // Filter team data into sections
   const governingBatch = teamData.filter((member) =>
     [
       "President",
       "Tech Head",
-      "Secretary",
       "Finance Head",
       "CP Head",
-      "Design Head",
-      "Vice President",
+      "Governing Batch",
     ].includes(member.role),
   );
 
@@ -34,10 +32,6 @@ const Contact = () => {
     ["Coordinator"].includes(member.role),
   );
 
-  // const coordi = teamData.filter((member)=>)
-  const AssociateMembers = teamData.filter((member) =>
-    ["Associate Member"].includes(member.role),
-  );
   const Alums = teamData.filter((member) => ["Alumni"].includes(member.role));
 
   return (
@@ -85,7 +79,14 @@ const Contact = () => {
                 <GraduationCap className="w-3 h-3" /> Faculty Advisor
               </div>
               <h3 className="text-2xl md:text-3xl font-semibold text-white tracking-tight">
-                Dr. Sandip Chakraborty
+                <a
+                  href="https://sandipc-iitkgp.github.io/sandip-web/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  Dr. Sandip Chakraborty
+                </a>
               </h3>
               <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-3xl mx-auto md:mx-0">
                 I am working as an Associate Professor in the Department of
@@ -126,15 +127,16 @@ const Contact = () => {
                 key={member.name}
                 color="purple"
                 name={member.name}
-                role={member.role}
+                role={member.role === "Governing Batch" ? "" : member.role}
                 image={member.dp}
+                linkedin={member.linkedin}
               />
             ))}
           </div>
         </section>
 
         <section className="mb-32">
-          <SectionHeader title="Coordinator" color="text-green-400" desc="" />
+          <SectionHeader title="Coordinators" color="text-green-400" desc="" />
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
             {coordinators.map((member) => (
               <MemberCard
@@ -143,26 +145,7 @@ const Contact = () => {
                 name={member.name}
                 role={member.role}
                 image={member.dp}
-              />
-            ))}
-          </div>
-        </section>
-
-        {/* Members Section - 6 Columns */}
-        <section className="mb-32">
-          <SectionHeader
-            title="Associate Members"
-            color="text-green-400"
-            desc="Our dedicated community members."
-          />
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
-            {AssociateMembers.map((member) => (
-              <MemberCard
-                key={member.name}
-                color="green"
-                name={member.name}
-                role="Associate Member"
-                image={member.dp}
+                linkedin={member.linkedin}
               />
             ))}
           </div>
@@ -178,6 +161,7 @@ const Contact = () => {
                 name={member.name}
                 role={member.role}
                 image={member.dp}
+                linkedin={member.linkedin}
               />
             ))}
           </div>
@@ -193,6 +177,7 @@ const Contact = () => {
                 name={member.name}
                 role={member.role}
                 image={member.dp}
+                linkedin={member.linkedin}
               />
             ))}
           </div>
@@ -224,8 +209,8 @@ const Contact = () => {
 
             <a
               href="mailto:codeclub.iitkgp@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="group"
             >
               <motion.div
@@ -290,11 +275,21 @@ const Contact = () => {
 
 // --- COMPACT HELPER COMPONENTS ---
 
-const MemberCard = ({ color, name, role, image }: any) => {
+const MemberCard = ({ color, name, role, image, linkedin }: any) => {
   const themes: any = {
     purple: "hover:border-purple-500/50 group-hover:text-purple-400",
     green: "hover:border-green-500/50 group-hover:text-green-400",
   };
+
+  const trimmedLinkedin = linkedin?.trim();
+  const validLinkedin =
+    trimmedLinkedin &&
+    (trimmedLinkedin.startsWith("http://") ||
+      trimmedLinkedin.startsWith("https://")
+      ? trimmedLinkedin
+      : trimmedLinkedin.startsWith("www.") || trimmedLinkedin.includes("linkedin.com")
+      ? `https://${trimmedLinkedin}`
+      : null);
 
   return (
     <motion.div
@@ -319,14 +314,29 @@ const MemberCard = ({ color, name, role, image }: any) => {
 
       {/* Content */}
       <div className="p-3 text-center">
-        <h4 className="text-sm font-bold text-white truncate px-1">{name}</h4>
-        <p
-          className={`text-[10px] font-medium tracking-wide uppercase opacity-60 mt-0.5 ${
-            themes[color].split("hover:")[1]
-          }`}
-        >
-          {role}
-        </p>
+        <h4 className="text-sm font-bold text-white truncate px-1">
+          {validLinkedin ? (
+            <a
+              href={validLinkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline hover:text-blue-400 transition-colors"
+            >
+              {name}
+            </a>
+          ) : (
+            name
+          )}
+        </h4>
+        {role && (
+          <p
+            className={`text-[10px] font-medium tracking-wide uppercase opacity-60 mt-0.5 ${
+              themes[color].split("hover:")[1]
+            }`}
+          >
+            {role}
+          </p>
+        )}
       </div>
     </motion.div>
   );
