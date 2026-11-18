@@ -316,7 +316,7 @@ const Events = () => {
             />
             <EventCard
               title="Farewell Party"
-              image="/_website_/assets/events_img/farewell.jpeg"
+              image="/_website_/assets/events_img/farewell.jpg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(239,68,68,0.35)]"
               borderColor="hover:border-red-500/40"
               icon={<GraduationCap className="text-green-400" />}
