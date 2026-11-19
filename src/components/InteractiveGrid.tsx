@@ -461,7 +461,6 @@ export default function InteractiveGrid() {
     };
 
     const onTouchMove = (e: TouchEvent) => {
-      e.preventDefault();
       if (e.touches.length > 0) {
         mouseRef.current.x = e.touches[0].clientX;
         mouseRef.current.y = e.touches[0].clientY;
@@ -469,7 +468,6 @@ export default function InteractiveGrid() {
     };
 
     const onTouchStart = (e: TouchEvent) => {
-      e.preventDefault();
       if (e.touches.length > 0) {
         mouseRef.current.x = e.touches[0].clientX;
         mouseRef.current.y = e.touches[0].clientY;
@@ -511,7 +509,7 @@ export default function InteractiveGrid() {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden", touchAction: "none", userSelect: "none", background: "#0a0a0a" }}>
+    <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden", touchAction: "pan-y", userSelect: "none", background: "#0a0a0a" }}>
       <canvas
         ref={canvasRef}
         style={{ display: "block", width: "100%", height: "100%" }}
