@@ -62,9 +62,9 @@ function App() {
     <EnergyPulseCursor />
     <div className="h-screen flex flex-col bg-gray-900 overflow-hidden">
       <main
-        className={`flex-1 ${
+        className={`flex-1 min-h-0 ${
           isHomePage
-            ? "h-full overflow-hidden overflow-y-auto md:overflow-hidden"
+            ? "overflow-y-auto overflow-x-hidden md:overflow-hidden"
             : "pb-16 md:pb-20 overflow-y-auto"
       }`}
       >
