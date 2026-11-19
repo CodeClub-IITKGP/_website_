@@ -64,9 +64,9 @@ function App() {
       <main
         className={`flex-1 ${
           isHomePage
-            ? "h-full overflow-hidden"
+            ? "h-full overflow-hidden overflow-y-auto md:overflow-hidden"
             : "pb-16 md:pb-20 overflow-y-auto"
-        }`}
+      }`}
       >
         <Routes>
           <Route path="/events" element={<Events />} />
