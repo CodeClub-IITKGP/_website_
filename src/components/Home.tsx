@@ -71,7 +71,7 @@ const Home = () => {
       </div>
       
       {/* Mobile social links */}
-      <div className="flex md:hidden justify-center items-center gap-4 py-8 px-4">
+      <div className="flex md:hidden justify-center items-center gap-4 py-8 px-4 bg-[#0f172a]">
         {/* Facebook */}
         <a
           href="https://www.facebook.com/CodeClub.IITKGP/"
