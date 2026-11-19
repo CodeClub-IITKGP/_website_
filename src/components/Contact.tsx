@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { User, GraduationCap } from "lucide-react";
+import { User } from "lucide-react";
 
 // type TeamMember = {
 //   name: string;
@@ -367,12 +367,5 @@ const SectionHeader = ({ title, color, desc }: any) => (
   </div>
 );
 
-const Tag = ({ text, color }: any) => (
-  <span
-    className={`${color} text-white px-3 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider`}
-  >
-    {text}
-  </span>
-);
 
 export default Contact;

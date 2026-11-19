@@ -1,17 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  Trophy,
-  Brain,
-  Theater,
-  Repeat,
-  Star,
-  Moon,
-  ChevronRight,
-  GraduationCap,
-  Dumbbell,
-  Music,
-} from "lucide-react";
+
 
 const Events = () => {
   const [activeSection, setActiveSection] = useState("codenites");
@@ -20,17 +9,14 @@ const Events = () => {
     {
       id: "codenites",
       title: "CodeNites",
-      icon: <Trophy className="w-4 h-4" />,
     },
     {
       id: "cpworkshop",
       title: "CP Workshop",
-      icon: <Brain className="w-4 h-4" />,
     },
     {
       id: "cultural",
       title: "Cultural Events",
-      icon: <Theater className="w-4 h-4" />,
     },
   ];
 
@@ -87,7 +73,6 @@ const Events = () => {
                     className="absolute -inset-0 bg-blue-600 rounded-full -z-10"
                   />
                 )}
-                <span className="shrink-0">{section.icon}</span>
                 <span className="font-medium text-xs md:text-sm">
                   {section.title}
                 </span>
@@ -335,7 +320,6 @@ const Events = () => {
 const EventCard = ({
   title,
   content,
-  icon,
   features,
   image,
   reversed,
@@ -364,7 +348,6 @@ const EventCard = ({
             key={f}
             className="text-xs md:text-sm text-gray-500 flex items-center gap-2"
           >
-            <ChevronRight className="w-3 h-3 text-blue-500 shrink-0" /> {f}
           </li>
         ))}
       </ul>

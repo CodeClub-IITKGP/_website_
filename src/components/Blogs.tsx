@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { User, Briefcase, Calendar, Globe, ArrowRight } from "lucide-react";
+import { User, Briefcase, Globe, ArrowRight } from "lucide-react";
 import allStories from "../internStories.json";
 
 const Blogs = () => {
