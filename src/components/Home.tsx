@@ -2,7 +2,7 @@ import InteractiveGrid from "./InteractiveGrid";
 
 const Home = () => {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative min-h-full w-full flex flex-col">
       <InteractiveGrid />
 
       {/* Floating Social Links */}
@@ -69,11 +69,9 @@ const Home = () => {
           </svg>
         </a>
       </div>
-
-      {/* Mobile social links */}
       
       {/* Mobile social links */}
-      <div className="z-50 flex md:hidden items-center gap-2">
+      <div className="flex md:hidden justify-center items-center gap-4 py-8 px-4">
         {/* Facebook */}
         <a
           href="https://www.facebook.com/CodeClub.IITKGP/"
