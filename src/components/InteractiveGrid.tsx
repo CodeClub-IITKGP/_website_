@@ -509,7 +509,7 @@ export default function InteractiveGrid() {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden", touchAction: "pan-y", userSelect: "none", background: "#0a0a0a" }}>
+    <div style={{ position: "relative", width: "100%", height: "100vh", minHeight: "100vh", flexShrink: 0, overflow: "hidden", touchAction: "pan-y", userSelect: "none", background: "#0a0a0a" }}>
       <canvas
         ref={canvasRef}
         style={{ display: "block", width: "100%", height: "100%" }}
