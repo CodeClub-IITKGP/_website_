@@ -56,7 +56,7 @@ const Blogs = () => {
               <div className="flex items-center gap-4 mb-12">
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-100 flex items-center gap-3">
-                  <Calendar className="text-blue-500 w-8 h-8" /> Interns of{" "}
+                   Interns of{" "}
                   {year}
                 </h2>
                 <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10" />

@@ -135,10 +135,9 @@ const Events = () => {
           <div className="space-y-10">
             <EventCard
               title="Bimonthly CodeNites"
-              image="/_website_/assets/events_img/bimonthly_codenite.jpeg"
+              image="assets/events_img/bimonthly_codenite.jpeg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(59,130,246,0.35)]"
               borderColor="hover:border-blue-500/40"
-              icon={<Repeat className="text-blue-400" />}
               content="Where coding meets competition! Every other month, CodeNites brings you a thrilling showdown of programming prowess. Challenge yourself with real-world problems, unleash your algorithmic creativity, and rise above the competition. More than just a contest, CodeNites connect a community of fellow passionate programmers of KGP."
               features={[
                 "Real-world programming challenges",
@@ -150,10 +149,9 @@ const Events = () => {
             <EventCard
               title="Freshers' CodeNite"
               reversed
-              image="/_website_/assets/events_img/freshers_codenite.jpeg"
+              image="assets/events_img/freshers_codenite.jpeg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(34,197,94,0.35)]"
               borderColor="hover:border-green-500/40"
-              icon={<Star className="text-blue-400" />}
               content="Where coding starts, and legends rise. Freshers, step into the arena! CodeNite awaits! Freshers' CodeNite is your chance to dive headfirst into the exciting world of competitive programming. Level up your skills, tackle stimulating challenges, and prove your coding mettle. No prior experience? No worries!"
               features={[
                 "Beginner-friendly challenges",
@@ -165,10 +163,9 @@ const Events = () => {
             />
             <EventCard
               title="Bitwise CodeNite"
-              image="/_website_/assets/events_img/bitwise.jpeg"
+              image="assets/events_img/bitwise.jpeg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(168,85,247,0.35)]"
               borderColor="hover:border-purple-500/40"
-              icon={<Moon className="text-blue-400" />}
               content="The code never sleeps!! A legendary overnight coding marathon for the bravest coders. Push your limits and code through the night in a thrilling competition. Experience the camaraderie and collaboration of the coding community. Emerge victorious and claim the ultimate coding crown!"
               features={[
                 "Overnight coding marathon",
@@ -209,7 +206,7 @@ const Events = () => {
             >
               <div className="w-full aspect-video border-b border-white/10 overflow-hidden relative group">
                 <img
-                  src="/_website_/assets/events_img/div_3.jpeg"
+                  src="assets/events_img/div_3.jpeg"
                   alt="CP Workshop for Div 3 Students"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -238,7 +235,7 @@ const Events = () => {
             >
               <div className="w-full aspect-video border-b border-white/10 overflow-hidden relative group">
                 <img
-                  src="/_website_/assets/events_img/div_2.jpeg"
+                  src="assets/events_img/div_2.jpeg"
                   alt="CP Workshop for Div 2 Students"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -286,10 +283,9 @@ const Events = () => {
           <div className="space-y-10">
             <EventCard
               title="Fresher's Nite"
-              image="/_website_/assets/events_img/freshers_nite1.jpeg"
+              image="assets/events_img/freshers_nite1.jpeg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(234,179,8,0.35)]"
               borderColor="hover:border-yellow-500/40"
-              icon={<Music className="text-green-400" />}
               content="This event marks the grand welcome of our newest cohort of CSE students, kicking off their exciting journey at IIT Kharagpur. Imagine a night filled with vibrant performances, dazzling lights, and infectious energy. Freshers showcase their hidden talents through song, dance, musical ensembles, captivating instrumentals, and even magic shows. The night is sprinkled with fun-filled activities, including funny quiz sessions and stand-up comedy acts."
               features={[
                 "Song and dance performances",
@@ -302,10 +298,9 @@ const Events = () => {
             <EventCard
               title="CSE Sports Day"
               reversed
-              image="/_website_/assets/events_img/sports_day.jpeg"
+              image="assets/events_img/sports_day.jpeg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(249,115,22,0.35)]"
               borderColor="hover:border-orange-500/40"
-              icon={<Dumbbell className="text-green-400" />}
               content="This day is a testament to the diverse athletic prowess and the spirit of sportsmanship that runs deep within our CSE community. Witness students from different years and disciplines engage in friendly rivalry across various sporting events. Whether it's the adrenaline rush on the Tata Steel Ground, or sheer determination on the track, the day is filled with excitement. Professors and students join us, adding another layer of connection."
               features={[
                 "Cricket tournament",
@@ -316,10 +311,9 @@ const Events = () => {
             />
             <EventCard
               title="Farewell Party"
-              image="/_website_/assets/events_img/farewell.jpg"
+              image="assets/events_img/farewell.jpg"
               glowColor="hover:shadow-[0_0_30px_-12px_rgba(239,68,68,0.35)]"
               borderColor="hover:border-red-500/40"
-              icon={<GraduationCap className="text-green-400" />}
               content="As our seniors prepare to bid farewell to their time at IIT Kharagpur, we hold a memorable Farewell Party to celebrate their achievements and contributions to the department. This is a time to reflect on shared memories, build lasting bonds, and express gratitude. The event takes on a heartwarming ambiance, filled with heartfelt speeches from our professors and seniors themselves. The evening concludes with a delicious dinner, providing the perfect opportunity for informal conversations and laughter."
               features={[
                 "Heartfelt speeches & stories",
@@ -358,12 +352,9 @@ const EventCard = ({
     } gap-8 items-center bg-white/[0.02] p-6 md:p-10 rounded-2xl border border-white/5 transition-all duration-300 ${glowColor} ${borderColor}`}
   >
     <div className="flex-1 space-y-5">
-      <div className="flex items-center gap-3">
-        <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-          {icon}
-        </div>
-        <h3 className="text-2xl font-bold tracking-tight">{title}</h3>
-      </div>
+      <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-5">
+        {title}
+      </h3>
       <p className="text-gray-300 leading-relaxed text-sm md:text-base">
         {content}
       </p>

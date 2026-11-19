@@ -41,6 +41,22 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+  const main = document.querySelector("main");
+
+  if (main) {
+    main.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }
+
+  lastScrollY.current = 0;
+  setNavVisible(true);
+}, [location.pathname]);
+
+
   return (
     <>
     <EnergyPulseCursor />

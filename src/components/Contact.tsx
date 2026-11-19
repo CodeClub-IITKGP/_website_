@@ -25,9 +25,21 @@ const Contact = () => {
     ].includes(member.role),
   );
 
-  const advisors = teamData.filter((member) =>
-    ["Advisor"].includes(member.role),
-  );
+const advisorNames = [
+  "Parth Patil",
+  "Gayathri Anant",
+  "Aryan Sanghi",
+  "Aman Antil",
+  "Tanishka Rahate",
+  "Shreya Bose",
+];
+
+const advisors = advisorNames
+  .map((name) => teamData.find(
+    (member) => member.name === name && member.role === "Advisor"
+  ))
+  .filter((member) => member !== undefined);
+
   const coordinators = teamData.filter((member) =>
     ["Coordinator"].includes(member.role),
   );
@@ -75,9 +87,9 @@ const Contact = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 to-transparent" />
             </div>
             <div className="flex-1 text-center md:text-left space-y-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-[11px] font-mono tracking-wide">
-                <GraduationCap className="w-3 h-3" /> Faculty Advisor
-              </div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
+                  Faculty Advisor
+              </p>
               <h3 className="text-2xl md:text-3xl font-semibold text-white tracking-tight">
                 <a
                   href="https://sandipc-iitkgp.github.io/sandip-web/"
@@ -100,16 +112,17 @@ const Contact = () => {
                   (M Tech) and Doctor of Philosophy (Ph.D.), both from IIT
                   Guwahati, in 2011 and 2014, respectively.
                 </p>
-                <p>
+                {/* <p>
                   As a system researcher, my primary research interests is in
                   the intersection of computer systems, human computer
                   interaction and machine learning.
-                </p>
+                </p> */}
               </div>
-              <div className="flex flex-wrap justify-center md:justify-start gap-2 pt-2">
-                <Tag text="CSE Dept" color="bg-blue-600" />
-                <Tag text="IIT Kharagpur" color="bg-purple-600" />
-              </div>
+              <p className="text-l md:text-l font-semibold text-white tracking-tight">
+                Department of Computer Science & Engineering
+                <span className="mx-2 text-white-400">·</span>
+                IIT Kharagpur
+              </p>
             </div>
           </motion.div>
         </section>
@@ -166,8 +179,8 @@ const Contact = () => {
             ))}
           </div>
         </section>
-
-        <section className="mb-32">
+        
+        {false && (<section className="mb-32">
           <SectionHeader title="Alumni" color="text-green-400" desc="" />
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
             {Alums.map((member) => (
@@ -182,6 +195,7 @@ const Contact = () => {
             ))}
           </div>
         </section>
+        )}
 
         {/* social Information */}
         <section className="mb-10">
