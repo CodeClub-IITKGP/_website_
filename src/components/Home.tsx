@@ -73,7 +73,7 @@ const Home = () => {
       {/* Mobile social links */}
       
       {/* Mobile social links */}
-      <div className="fixed top-4 right-4 z-50 flex md:hidden items-center gap-2">
+      <div className="z-50 flex md:hidden items-center gap-2">
         {/* Facebook */}
         <a
           href="https://www.facebook.com/CodeClub.IITKGP/"
