@@ -71,61 +71,103 @@ const advisors = advisorNames
           </p>
         </motion.header>
 
-        {/* Professor In-charge - compact text, airy spacing */}
+        
+        {/* Professor In-charge */}
         <section className="mb-32">
           <SectionHeader title="Professor In-charge" color="text-blue-400" />
-          <motion.div
-            whileHover={{ y: -5 }}
-            className="max-w-4xl mx-auto bg-white/[0.03] rounded-[2rem] p-8 md:p-10 border border-white/5 flex flex-col md:flex-row gap-10 items-center"
-          >
-            <div className="w-48 h-48 flex-shrink-0 bg-gray-900 rounded-2xl border border-white/10 relative overflow-hidden group shadow-[0_15px_50px_-25px_rgba(59,130,246,0.4)]">
-              <img
-                src={`assets/imgs/sandip chakrobarty.jpeg`}
-                alt="Dr. Sandip Chakraborty"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 to-transparent" />
-            </div>
-            <div className="flex-1 text-center md:text-left space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
-                  Faculty Advisor
-              </p>
-              <h3 className="text-2xl md:text-3xl font-semibold text-white tracking-tight">
-                <a
-                  href="https://sandipc-iitkgp.github.io/sandip-web/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Dr. Sandip Chakraborty
-                </a>
-              </h3>
-              <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-3xl mx-auto md:mx-0">
-                I am working as an Associate Professor in the Department of
-                Computer Science and Engineering at the Indian Institute of
-                Technology (IIT) Kharagpur.
-              </p>
-              <div className="space-y-3 text-gray-400 leading-relaxed text-sm md:text-base max-w-3xl mx-auto md:mx-0">
-                <p>
-                  I obtained my Bachelor of Engineering (BE) degree from
-                  Jadavpur University, Kolkata in 2009 and Master of Technology
-                  (M Tech) and Doctor of Philosophy (Ph.D.), both from IIT
-                  Guwahati, in 2011 and 2014, respectively.
-                </p>
-                {/* <p>
-                  As a system researcher, my primary research interests is in
-                  the intersection of computer systems, human computer
-                  interaction and machine learning.
-                </p> */}
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            {/* Dr. Sandip Chakraborty */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white/[0.03] rounded-[2rem] p-8 border border-white/5 flex flex-col items-center text-center"
+            >
+              <div className="w-48 h-48 flex-shrink-0 bg-gray-900 rounded-2xl border border-white/10 overflow-hidden">
+                <img
+                  src="assets/imgs/sandip chakrobarty.jpeg"
+                  alt="Dr. Sandip Chakraborty"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <p className="text-l md:text-l font-semibold text-white tracking-tight">
-                Department of Computer Science & Engineering
-                <span className="mx-2 text-white-400">·</span>
-                IIT Kharagpur
-              </p>
-            </div>
-          </motion.div>
+
+              <div className="mt-6 space-y-3">
+                <h3 className="text-2xl font-semibold text-white">
+                  <a
+                    href="https://sandipc-iitkgp.github.io/sandip-web/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Dr. Sandip Chakraborty
+                  </a>
+                </h3>
+
+                <p className="text-sm text-gray-300">
+                  I am working as a Professor in the Department of Computer
+                  Science and Engineering at the Indian Institute of
+                  Technology (IIT) Kharagpur.
+                </p>
+
+                <p className="text-sm text-gray-400">
+                  His research interests lie at the intersection of Computer
+                  Systems and Networks, Human-Computer Interaction, and
+                  Machine Learning. His work focuses on developing assistive
+                  technologies, distributed systems, and pervasive and
+                  ubiquitous computing solutions, including sensing
+                  technologies for mobile devices and smartphones.
+                </p>
+
+                <p className="text-sm font-semibold text-white">
+                  Department of Computer Science & Engineering · IIT Kharagpur
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Jibesh Patra */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white/[0.03] rounded-[2rem] p-8 border border-white/5 flex flex-col items-center text-center"
+            >
+              <div className="w-48 h-48 flex-shrink-0 bg-gray-900 rounded-2xl border border-white/10 overflow-hidden">
+                <img
+                  src="assets/imgs/jibesh.jpeg"
+                  alt="Jibesh Patra"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="mt-6 space-y-3">
+                <h3 className="text-2xl font-semibold text-white">
+                  <a
+                    href="https://jibesh.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Jibesh Patra
+                  </a>
+                </h3>
+
+                <p className="text-sm text-gray-300">
+                  Dr. Jibesh Patra is an Assistant Professor in the Department of
+                  Computer Science and Engineering at IIT Kharagpur. His research
+                  focuses on applying Large Language Models (LLMs) to Software
+                  Engineering and Software Security. He completed his Ph.D. at
+                  the University of Stuttgart, Germany, where he worked on
+                  improving software correctness and reliability through code
+                  corpus analysis.
+                </p>
+
+                <p className="text-sm font-semibold text-white">
+                  Department of Computer Science & Engineering · IIT Kharagpur
+                </p>
+              </div>
+            </motion.div>
+
+          </div>
         </section>
+
 
         {/* Governing Batch Section - 5 Columns */}
         <section className="mb-32">

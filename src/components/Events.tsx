@@ -146,19 +146,7 @@ const Events = () => {
                 "Win bragging rights!",
               ]}
             />
-            <EventCard
-              title="Bitwise CodeNite"
-              image="assets/events_img/bitwise.jpeg"
-              glowColor="hover:shadow-[0_0_30px_-12px_rgba(168,85,247,0.35)]"
-              borderColor="hover:border-purple-500/40"
-              content="The code never sleeps!! A legendary overnight coding marathon for the bravest coders. Push your limits and code through the night in a thrilling competition. Experience the camaraderie and collaboration of the coding community. Emerge victorious and claim the ultimate coding crown!"
-              features={[
-                "Overnight coding marathon",
-                "Ultimate coding challenge",
-                "Community collaboration",
-                "Legendary coder status",
-              ]}
-            />
+            
           </div>
         </section>
 
